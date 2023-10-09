@@ -14,13 +14,17 @@ html {
     padding: 0;
 }
 
+body {
+    margin: 0;
+}
+
 .fond {
     background-image: url(./img/boombox.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
 }
@@ -28,4 +32,8 @@ html {
 h1 {
     font-family: 'Goldman';
     text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    height: ;
 }

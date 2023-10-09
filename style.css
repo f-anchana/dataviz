@@ -32,7 +32,10 @@ body {
 h1 {
     font-family: 'Goldman';
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
     margin: 0;
     text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

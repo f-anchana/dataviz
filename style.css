@@ -39,12 +39,21 @@ h1 {
     text-transform: uppercase;
     position: absolute;
     margin: 0;
-    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
+p {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Goldman';
+    text-transform: uppercase;
+    top: 90%;
+    left: 50%;
+    transform: translate(-90%,-50%);
+}
 
 /* bouton de scroll */
 
@@ -65,8 +74,8 @@ a.scroll span {
     height: 50px;
     margin-left: -25px;
     transform: rotate(-45deg);
-    -webkit-animation: btnscroll 2s infinite;
-    animation: btnscroll 2s infinite;
+    -webkit-animation: btnscroll 1s infinite ease;
+    animation: btnscroll 1s infinite ease;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
 }

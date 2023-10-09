@@ -4,4 +4,4 @@ Le projet consiste à créer une visualisation interactive de données qui évol
 
 # Lien vers le site
 
-Le lien pour visiter le site : https://f-anchana.github.io/dataviz/
+Le lien pour visiter le site : https://f-anchana.github.io/g-rap/

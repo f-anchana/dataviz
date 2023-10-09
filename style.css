@@ -6,7 +6,11 @@
 
 @font-face {
     font-family: 'Goldman';
-    src: url('./font/Goldman-Regular.ttf') format('ttf');
+    src:
+    url('./font/Goldman-Regular.woff2') format('woff'),
+    url('./font/Goldman-Regular.woff2') format('woff2'),
+    url('./font/goldman-bold.woff') format('woff'),
+    url('./font/Goldman-Bold.woff2') format('woff2');
 }
 
 html {

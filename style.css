@@ -16,6 +16,7 @@ html {
 
 body {
     margin: 0;
+    position: flex;
 }
 
 .fond {
@@ -27,6 +28,8 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
+    display: grid;
+    place-items: center;
 }
 
 h1 {
@@ -34,12 +37,8 @@ h1 {
     font-family: 'Goldman';
     color: white;
     text-transform: uppercase;
-    position: absolute;
     margin: 0;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 
@@ -52,8 +51,6 @@ a.scroll {
     cursor: pointer;
 }
 
-/* le position absolute se positionne par rapport au body parce qu'il y n'a aucun ancêtre positionné 
-un carré a fait une rotation et on garde que 2 bordures*/
 
 a.scroll span {
     position: absolute;

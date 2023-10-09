@@ -28,6 +28,22 @@ section {
     width: 100%;
 }
 
+/* barre de scroll*/
+
+*::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px #fff, 0 0 11px #fff, 0 0 30px #45a6eb, 0 0 50px #45abeb, 0 0 60px #459beb;
+  }
+
 
 /* Section 1 - page d'accueil */
 

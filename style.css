@@ -54,6 +54,7 @@ p {
     transform: translate(-90%,-50%);
 }
 
+
 /* bouton de scroll */
 
 a.scroll {
@@ -92,5 +93,6 @@ a.scroll span {
         transform: rotate(-45deg) translate(0, 0);
     }
 }
+
 
 /* Section 2 - Graphique */

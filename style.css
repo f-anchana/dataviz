@@ -18,6 +18,9 @@ body {
     margin: 0;
 }
 
+
+/* Section 1 - page d'accueil */
+
 .fond {
     background-image: url(./img/cassette.jpg);
     background-repeat: no-repeat;
@@ -43,6 +46,8 @@ h1 {
 }
 
 
+/* bouton de scroll */
+
 a.scroll {
     position: absolute;
     bottom: 80px;
@@ -51,9 +56,6 @@ a.scroll {
     transform: translate(-50%);
     cursor: pointer;
 }
-
-/* le position absolute se positionne par rapport au body parce qu'il y n'a aucun ancêtre positionné 
-un carré a fait une rotation et on garde que 2 bordures*/
 
 a.scroll span {
     position: absolute;
@@ -82,3 +84,5 @@ a.scroll span {
         transform: rotate(-45deg) translate(0, 0);
     }
 }
+
+/* Section 2 - Graphique */

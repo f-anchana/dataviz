@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Goldman';
-    src: url('font/Goldman-Regular.ttf') format('ttf');
+    src: url('./font/Goldman-Regular.ttf') format('ttf');
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 }
 
 .fond {
-    background-image: url(/img/boombox.jpg);
+    background-image: url(./img/boombox.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

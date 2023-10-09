@@ -31,8 +31,10 @@ body {
 
 h1 {
     font-family: 'Goldman';
+    color: white;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     margin: 0;
-    text-align: center;
 }

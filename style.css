@@ -49,9 +49,9 @@ p {
     color: white;
     font-family: 'Goldman';
     text-transform: uppercase;
-    top: 90%;
+    top: 88%;
     left: 50%;
-    transform: translate(-90%,-50%);
+    transform: translate(-50%,-88%);
 }
 
 

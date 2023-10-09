@@ -19,6 +19,9 @@ body {
     position: flex;
 }
 
+
+/* Section 1 - page d'accueil */
+
 .fond {
     background-image: url(./img/cassette.jpg);
     background-repeat: no-repeat;
@@ -38,9 +41,20 @@ h1 {
     color: white;
     text-transform: uppercase;
     margin: 0;
-    text-align: center;
 }
 
+p {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Goldman';
+    text-transform: uppercase;
+    top: 90%;
+    left: 50%;
+    transform: translate(-90%,-50%);
+}
+
+/* bouton de scroll */
 
 a.scroll {
     position: absolute;
@@ -51,7 +65,6 @@ a.scroll {
     cursor: pointer;
 }
 
-
 a.scroll span {
     position: absolute;
     z-index: 10;
@@ -60,8 +73,8 @@ a.scroll span {
     height: 50px;
     margin-left: -25px;
     transform: rotate(-45deg);
-    -webkit-animation: btnscroll 2s infinite;
-    animation: btnscroll 2s infinite;
+    -webkit-animation: btnscroll 1s infinite ease;
+    animation: btnscroll 1s infinite ease;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
 }
@@ -79,3 +92,5 @@ a.scroll span {
         transform: rotate(-45deg) translate(0, 0);
     }
 }
+
+/* Section 2 - Graphique */

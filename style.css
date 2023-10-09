@@ -63,8 +63,8 @@ a.scroll span {
     height: 50px;
     margin-left: -25px;
     transform: rotate(-45deg);
-    -webkit-animation: btnscroll 2s infinite;
-    animation: btnscroll 2s infinite;
+    -webkit-animation: btnscroll 1s infinite ease;
+    animation: btnscroll 1s infinite ease;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
 }

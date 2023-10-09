@@ -36,12 +36,21 @@ h1 {
     text-transform: uppercase;
     position: absolute;
     margin: 0;
-    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
+p {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Goldman';
+    text-transform: uppercase;
+    top: 90%;
+    left: 50%;
+    transform: translate(-90%,-50%);
+}
 
 a.scroll {
     position: absolute;

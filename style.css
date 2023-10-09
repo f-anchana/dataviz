@@ -7,8 +7,6 @@
 @font-face {
     font-family: 'Goldman';
     src: url('font/Goldman-Regular.ttf') format('ttf');
-    font-family: 'Goldman-bold';
-    src: url('font/Goldman-Bold.ttf') format('ttf');
 }
 
 html {
@@ -17,6 +15,6 @@ html {
 }
 
 h1 {
-    font-family: 'Goldman-bold';
+    font-family: 'Goldman';
     text-transform: uppercase;
 }

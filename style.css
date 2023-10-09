@@ -41,3 +41,44 @@ h1 {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+
+a.scroll {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+/* le position absolute se positionne par rapport au body parce qu'il y n'a aucun ancêtre positionné 
+un carré a fait une rotation et on garde que 2 bordures*/
+
+a.scroll span {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    transform: rotate(-45deg);
+    -webkit-animation: btnscroll 2s infinite;
+    animation: btnscroll 2s infinite;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+@keyframes btnscroll {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}

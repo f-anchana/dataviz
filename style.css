@@ -64,6 +64,7 @@ section {
 
 h1 {
     font-size: 8.331rem;
+    margin: 0;
     color: white;
     text-transform: uppercase;
 }
@@ -78,6 +79,12 @@ p {
     left: 50%;
     transform: translate(-50%, -88%);
 }
+
+.stroke{
+    border: red solid 3px;
+    width: fit-content;
+}
+
 
 
 /* bouton de scroll */

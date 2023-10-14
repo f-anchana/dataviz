@@ -60,6 +60,8 @@ section {
     width: 100%;
     display: grid;
     place-items: center;
+    filter: brightness(40%);
+    z-index: 0;
 }
 
 h1 {
@@ -80,9 +82,18 @@ p {
     transform: translate(-50%, -88%);
 }
 
-.stroke{
-    border: red solid 3px;
+.strokeleft{
+    /* border: red solid 3px; */
     width: fit-content;
+    position: absolute;
+    left: 3%;
+    top: 85%;
+}
+
+.strokeright{
+    position: absolute;
+    right: 3%;
+    top: 5%;
 }
 
 

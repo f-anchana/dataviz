@@ -83,7 +83,6 @@ p {
 }
 
 .strokeleft{
-    /* border: red solid 3px; */
     width: fit-content;
     position: absolute;
     left: 3%;
@@ -93,9 +92,8 @@ p {
 .strokeright{
     position: absolute;
     right: 3%;
-    top: 5%;
+    bottom: 85%;
 }
-
 
 
 /* bouton de scroll */
@@ -145,9 +143,21 @@ a.scroll span {
     width: 100%;
 }
 
+.strokeleft2{
+    position: absolute;
+    left: 3%;
+    top: 1415px;
+}
+
+.strokeright2{
+    position: absolute;
+    right: 3%;
+    top: 800px;
+}
+
 #section2{
     text-transform: uppercase;
-    text-align: end;
+    text-align: center;
 }
 
 .tube{

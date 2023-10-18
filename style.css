@@ -158,8 +158,8 @@ svg{
 
 #section2{
     text-align: end;
-    /* padding-top: 5rem; */
-    /* margin-right: 6.25rem; */
+    padding-top: 5rem;
+    margin-right: 6.25rem;
     font-family: 'Ethnocentric';
 }
 
@@ -174,16 +174,24 @@ svg{
     color: #ffffff;
 }
 
-h1, h2{
-    margin: 0;
-}
-
 h1{
     font-family: 'Poppins-bold';
     text-transform: uppercase;
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 30px;
+}
+
+h2{
+    font-family: 'Ethnocentric' ;
+    margin-left: 10px;
 }
 
 .image{
     height: 100vh;
     right: 0;
+}
+
+.artista{
+    color: #8A6E56;
 }

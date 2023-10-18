@@ -20,8 +20,9 @@ d3.json("rapdata.json").then(function (data) {
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d, i) => couleur[i % couleur.length])
         .attr("transform", `scale(1,-1)`)
-    // .style("padding-right", "50px")
-    
+
+        
+
     d3.selectAll('.histobarre')
         .on("mouseenter",function(e,d){
             d3.selectAll('.histobarre')
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         response.json().then(function (data) {
             data.forEach(function afficherap(items) {
                 var liste = document.querySelector(".chanteurs");
-                liste.innerHTML = liste.innerHTML + "<section class='rap' id=" + items.id + "><img src='" + items["img"] + "'class='image'><h1> Winner : " + items.year + " </h1><h2>" + items.titre +" by <span class='kelis'>"+ items.artiste+"</span></h2></section>";
+                liste.innerHTML = liste.innerHTML + "<section class='rap' id=" + items.id + "><img src='" + items["img"] + "'class='image'><h1> Winner : " + items.year + " </h1><h2>" + items.titre +" by <span class='artista'>"+ items.artiste+"</span></h2></section>";
 
             });
 

@@ -3719,10 +3719,10 @@
         clockNow = 0,
         clockSkew = 0,
         clock = typeof performance === "object" && performance.now ? performance : Date,
-        setFrame = typeof window === "object" && window.requestAnimationFrame ? window.requestAnimationFrame.bind(window) : function(f) { setTimeout(f, 17); };
+        setframe = typeof window === "object" && window.requestAnimationframe ? window.requestAnimationframe.bind(window) : function(f) { setTimeout(f, 17); };
     
     function now() {
-      return clockNow || (setFrame(clearNow), clockNow = clock.now() + clockSkew);
+      return clockNow || (setframe(clearNow), clockNow = clock.now() + clockSkew);
     }
     
     function clearNow() {
@@ -3816,7 +3816,7 @@
         if (interval$1) interval$1 = clearInterval(interval$1);
       } else {
         if (!interval$1) clockLast = clock.now(), interval$1 = setInterval(poke, pokeDelay);
-        frame = 1, setFrame(wake);
+        frame = 1, setframe(wake);
       }
     }
     

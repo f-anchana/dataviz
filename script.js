@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         response.json().then(function (data) {
             data.forEach(function afficherap(items) {
                 var liste = document.querySelector(".chanteurs");
-                liste.innerHTML = liste.innerHTML + "<section id=" + items.id + "><img src='" + items["img"] + "'class='image'><p> Winner : " + items.year + " </p><h1></h1></section>";
+                liste.innerHTML = liste.innerHTML + "<section class='rap' id=" + items.id + "><img src='" + items["img"] + "'class='image'><p> Winner : " + items.year + " </p><h1></h1></section>";
 
             });
 

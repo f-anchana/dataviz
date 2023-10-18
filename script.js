@@ -3,7 +3,7 @@ let  couleur = ["black", "#5E504C", "#8A6E56"];
 d3.json("rapdata.json").then(function (data) {
     console.log("youpi")
     let largeur_baton = 210 / data.length;
-console.log(data)
+    console.log(data)
     d3.select("#objet")
         .selectAll("g")
         .data(data)
@@ -17,6 +17,20 @@ console.log(data)
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d,i) =>couleur[i%couleur.length])
         .attr("transform", `scale(1,-1)`)
+    
+    d3.selectAll('.histobarre')
+        .on("mouseenter",function(e,d){
+            d3.selectAll('.histobarre')
+                .style("opacity",0.5)
+            d3.select( this )
+                .style("opacity",1)
+        })
+        .on("mouseleave",function(e,d){
+            d3.selectAll('.histobarre')
+                .style("opacity",1)
+        })
+        .on("mouseclick",function(e,d){
+        })
 })
 
 document.addEventListener("DOMContentLoaded", function () {

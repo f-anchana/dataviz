@@ -1,4 +1,7 @@
-// fetch("rapdata.json")
+fetch("rapdata.json")
+d3.json("rapdata.json", function (data){
+    
+})
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     fetch('rapdata.json').then(function (response) {

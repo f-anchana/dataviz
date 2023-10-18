@@ -172,17 +172,18 @@ svg{
     color: #ffffff;
 }
 
+
 h1{
     font-family: 'Poppins-bold';
     text-transform: uppercase;
-    margin: 0;
-    margin-left: 10px;
-    padding-top: 30px;
+    margin-top: 0;
+    margin-left: 60px;
+    padding-top: 50px;
 }
 
 h2{
-    font-family: 'Ethnocentric' ;
-    margin-left: 10px;
+    margin-left: 60px;
+    padding-top: 5px;
 }
 
 .image{

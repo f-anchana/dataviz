@@ -151,15 +151,13 @@ a.scroll span {
 }
 
 svg{
-    /* top: 50%;
-    left: 50%; */
-    transform: translate(35%, 10%);
+    transform: translate(15%, 5%);
 }
 
 #section2{
     text-align: end;
-    /* padding-top: 5rem; */
-    /* margin-right: 6.25rem; */
+    padding-top: 5rem;
+    margin-right: 6.25rem;
     font-family: 'Ethnocentric';
 }
 

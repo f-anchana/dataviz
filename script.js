@@ -3,8 +3,7 @@ let couleur = ["black", "#5E504C", "#8A6E56"];
 d3.json("rapdata.json").then(function (data) {
     console.log("youpi")
     let largeur_baton = 210 / data.length;
-    // let espaceEntreBarres = 10;
-    // 210
+    210
     console.log(data)
     d3.select("#objet")
         .selectAll("g")
@@ -15,8 +14,7 @@ d3.json("rapdata.json").then(function (data) {
 
     d3.selectAll(".histobarre")
         .append("rect")
-        // .attr("width", largeur_baton)   
-        // .attr("width", (d, i) => i * (largeur_baton + `{espaceEntreBarres}px`))
+        .attr("width", largeur_baton)   
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d, i) => couleur[i % couleur.length])
         .attr("transform", `scale(1,-1)`)

@@ -17,6 +17,18 @@ console.log(data)
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d,i) =>couleur[i%couleur.length])
         .attr("transform", `scale(1,-1)`)
+        .on("mouseenter",function(e,d){
+            d3.selectAll('.histobarre')
+                .style("opacity",0.5)
+            d3.select( this )
+                .style("opacity",1)
+        })
+        .on("mouseleave",function(e,d){
+            d3.selectAll('.histobarre')
+                .style("opacity",1)
+        })
+        .on("mouseclick",function(e,d){
+        })
 })
 
 document.addEventListener("DOMContentLoaded", function () {

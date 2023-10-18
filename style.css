@@ -198,6 +198,24 @@ h2{
 
 }
 
+h3 {
+    margin-left: 3.75rem;
+    margin-top: 3rem;
+
+}
+
+p {
+    margin-left: 3.75rem;
+    width: 50vw;
+}
+
+iframe {
+    margin-left: 3.75rem;
+    margin-top: 3rem;
+    width: 24.375rem;
+    height: 14.375rem;
+}
+
 /*Section 4 - About*/
 
 .about-h2 {

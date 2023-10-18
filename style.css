@@ -169,7 +169,7 @@ svg{
 
 .rap{
     background-color: black;
-    color: #ffffff;
+    color: white;
 }
 
 
@@ -204,6 +204,17 @@ h2, h3 {
 
 h3 {
     margin-top: 5rem;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #8A6E56;
+    transition: ease-in-out;
+    text-decoration: underline;
 }
 
 .about {

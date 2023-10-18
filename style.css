@@ -32,7 +32,7 @@ body {
 
 section {
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     /* scroll-snap-align: start;
     scroll-snap-stop: always; */
@@ -147,12 +147,6 @@ a.scroll span {
 
 /* Section 2 - Graphique */
 
-.fond2 {
-    height: 100vh;
-    width: 100%;
-
-}
-
 .strokeleft2{
     left: 3%;
     top: 85%
@@ -174,11 +168,12 @@ a.scroll span {
     color: #8A6E56;
 }
 
+/* Section 3 - Rappeurs */
 
-/* Section 3 - Description des chanteurs */
+.rap{
+    background-color: black;
+}
 
-.fond3 {
+.image{
     height: 100vh;
-    width: 100%;
-
 }

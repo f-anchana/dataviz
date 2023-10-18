@@ -159,10 +159,11 @@ a.scroll span {
 }
 
 #section2{
-    text-transform: uppercase;
-    text-align: center;
+    text-align: end;
+    padding-top: 80px;
+    margin-right: 100px;
     font-family: 'Ethnocentric';
-    text-transform: uppercase;
+
 }
 
 .tube{

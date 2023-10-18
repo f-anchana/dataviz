@@ -76,7 +76,7 @@ img{
     position: absolute;
 }
 
-p {
+.explore {
     position: absolute;
     z-index: 1;
     color: white;
@@ -151,9 +151,7 @@ a.scroll span {
 }
 
 svg{
-    /* top: 50%;
-    left: 50%; */
-    transform: translate(35%, 10%);
+    transform: translate(15%, 5%);
 }
 
 #section2{
@@ -194,4 +192,19 @@ h2{
 
 .artista{
     color: #8A6E56;
+
+}
+
+/*Section 4 - About*/
+
+h2, h3 {
+    font-family: "Ethnocentric";
+}
+
+h3 {
+    margin-top: 5rem;
+}
+
+.about {
+    padding: 2rem;
 }

@@ -76,7 +76,7 @@ img{
     position: absolute;
 }
 
-p {
+.explore {
     position: absolute;
     z-index: 1;
     color: white;
@@ -172,10 +172,6 @@ svg{
     color: #ffffff;
 }
 
-h1, h2{
-    margin: 0;
-}
-
 h1{
     font-family: 'Poppins-bold';
     text-transform: uppercase;
@@ -184,4 +180,18 @@ h1{
 .image{
     height: 100vh;
     right: 0;
+}
+
+/*Section 4 - About*/
+
+h2, h3 {
+    font-family: "Ethnocentric";
+}
+
+h3 {
+    margin-top: 5rem;
+}
+
+.about {
+    padding: 2rem;
 }

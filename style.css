@@ -71,10 +71,6 @@ section {
     z-index: 0;
 }
 
-h1 {
-    font-size: 8.331rem;
-    margin: 0;
-}
 
 img{
     position: absolute;
@@ -157,7 +153,7 @@ a.scroll span {
 svg{
     /* top: 50%;
     left: 50%; */
-    transform: translate(10%);
+    transform: translate(35%, 10%);
 }
 
 #section2{
@@ -175,6 +171,16 @@ svg{
 
 .rap{
     background-color: black;
+    color: #ffffff;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Poppins-bold';
+    text-transform: uppercase;
 }
 
 .image{

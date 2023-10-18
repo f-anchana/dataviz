@@ -200,12 +200,12 @@ h2{
 
 /*Section 4 - About*/
 
-.about-title {
+.about-h2 {
     font-family: "Ethnocentric";
     margin-left: 5rem;
 }
 
-h3 {
+.about-h3 {
     font-family: "Ethnocentric";
     margin-top: 5rem;
     margin-left: 5rem;

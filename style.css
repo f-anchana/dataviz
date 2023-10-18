@@ -60,7 +60,6 @@ section {
     width: 100%;
     display: grid;
     place-items: center;
-    filter: brightness(40%);
     z-index: 0;
 }
 
@@ -69,6 +68,14 @@ h1 {
     margin: 0;
     color: white;
     text-transform: uppercase;
+}
+
+section{
+    position: relative;
+}
+
+img{
+    position: absolute;
 }
 
 p {
@@ -83,14 +90,11 @@ p {
 }
 
 .strokeleft{
-    width: fit-content;
-    position: absolute;
     left: 3%;
     top: 85%;
 }
 
 .strokeright{
-    position: absolute;
     right: 3%;
     bottom: 85%;
 }
@@ -144,20 +148,20 @@ a.scroll span {
 }
 
 .strokeleft2{
-    position: absolute;
     left: 3%;
-    top: 1415px;
+    top: 85%
 }
 
 .strokeright2{
-    position: absolute;
     right: 3%;
-    top: 800px;
+    bottom: 85%;
 }
 
 #section2{
     text-transform: uppercase;
-    text-align: center;
+    text-align: end;
+    margin-right: 100px;
+    padding-top: 80px;
 }
 
 .tube{

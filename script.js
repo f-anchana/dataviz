@@ -1,6 +1,8 @@
+let  couleur = ["black", "#5E504C", "#8A6E56"];
+
 d3.json("rapdata.json").then(function (data) {
     console.log("youpi")
-    let largeur_baton = 300 / data.length;
+    let largeur_baton = 210 / data.length;
 console.log(data)
     d3.select("#objet")
         .selectAll("g")
@@ -13,7 +15,7 @@ console.log(data)
         .append("rect") // pas besoin de coordonnées car il part de 0 , 0 par défaut
         .attr("width", largeur_baton)
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
-        .attr("fill", "brown")
+        .attr("fill", (d,i) =>couleur[i%couleur.length])
         .attr("transform", `scale(1,-1)`)
 })
 

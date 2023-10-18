@@ -109,7 +109,7 @@ p {
 
 a.scroll {
     position: absolute;
-    bottom: 80px;
+    bottom: 5rem;
     left: 50%;
     z-index: 2;
     transform: translate(-50%);
@@ -122,7 +122,7 @@ a.scroll span {
     top: 0;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
+    margin-left: -1.563rem;
     transform: rotate(-45deg);
     -webkit-animation: btnscroll 1s infinite ease;
     animation: btnscroll 1s infinite ease;
@@ -165,8 +165,8 @@ a.scroll span {
 
 #section2{
     text-align: end;
-    padding-top: 80px;
-    margin-right: 100px;
+    padding-top: 5rem;
+    margin-right: 6.25rem;
     font-family: 'Ethnocentric';
 }
 

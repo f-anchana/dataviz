@@ -1,7 +1,7 @@
  [
   {
     "id": 1,
-    "Année": 2004,
+    "year": 2004,
     "Titre": "Lose Yourself",
     "Artiste": "Eminem",
     "Nbr": 1910117923,
@@ -9,8 +9,7 @@
   },
   {
     "id": 2,
-    "img": "img/orange.jpg",
-    "Année": 2005,
+    "year": 2005,
     "Titre": "Jesus Walks",
     "Artiste": "Kanye West",
     "Nbr": 220313639,
@@ -18,7 +17,7 @@
   },
   {
     "id": 3,
-    "Année": 2006,
+    "year": 2006,
     "Titre": "Diamonds from Sierra Leone",
     "Artiste": "Kanye West",
     "Nbr": 34616312,
@@ -26,7 +25,7 @@
   },
   {
     "id": 4,
-    "Année": 2007,
+    "year": 2007,
     "Titre": "Money Maker",
     "Artiste": "Ludacris featuring Pharrell Williams",
     "Nbr": 72482059,
@@ -34,7 +33,7 @@
   },
   {
     "id": 5,
-    "Année": 2008,
+    "year": 2008,
     "Titre": "Good Life",
     "Artiste": "Kanye West featuring T-Pain",
     "Nbr": 362254203,
@@ -42,7 +41,7 @@
   },
   {
     "id": 6,
-    "Année": 2009,
+    "year": 2009,
     "Titre": "Lollipop",
     "Artiste": "Lil Wayne",
     "Nbr": 460625785,
@@ -50,7 +49,7 @@
   },
   {
     "id": 7,
-    "Année": 2010,
+    "year": 2010,
     "Titre": "Run This Town",
     "Artiste": "Jay-Z featuring Rihanna and Kanye West",
     "Nbr": 406784210,
@@ -58,7 +57,7 @@
   },
   {
     "id": 8,
-    "Année": 2011,
+    "year": 2011,
     "Titre": "Empire State of Mind",
     "Artiste": "Jay-Z featuring Alicia Keys",
     "Nbr": 842705171,
@@ -66,7 +65,7 @@
   },
   {
     "id": 9,
-    "Année": 2012,
+    "year": 2012,
     "Titre": "All of the Lights",
     "Artiste": "Kanye West, Rihanna, Kid Cudi and Fergie",
     "Nbr": 581402797,
@@ -74,7 +73,7 @@
   },
   {
     "id": 10,
-    "Année": 2013,
+    "year": 2013,
     "Titre": "Niggas in Paris",
     "Artiste": "Kanye West and Jay-Z",
     "Nbr": 1251076994,
@@ -82,7 +81,7 @@
   },
   {
     "id": 11,
-    "Année": 2014,
+    "year": 2014,
     "Titre": "Thrift Shop",
     "Artiste": "Macklemore and Ryan Lewis featuring Wanz",
     "Nbr": 1071633935,
@@ -90,7 +89,7 @@
   },
   {
     "id": 12,
-    "Année": 2015,
+    "year": 2015,
     "Titre": "i",
     "Artiste": "Kendrick Lamar",
     "Nbr": 84094818,
@@ -98,7 +97,7 @@
   },
   {
     "id": 13,
-    "Année": 2016,
+    "year": 2016,
     "Titre": "Alright",
     "Artiste": "Kendrick Lamar",
     "Nbr": 575086528,
@@ -106,7 +105,7 @@
   },
   {
     "id": 14,
-    "Année": 2017,
+    "year": 2017,
     "Titre": "Hotline Bling",
     "Artiste": "Drake",
     "Nbr": 1242107578,
@@ -114,7 +113,7 @@
   },
   {
     "id": 15,
-    "Année": 2018,
+    "year": 2018,
     "Titre": "HUMBLE",
     "Artiste": "Kendrick Lamar",
     "Nbr": 1992635804,
@@ -122,7 +121,7 @@
   },
   {
     "id": 16,
-    "Année": 2019,
+    "year": 2019,
     "Titre": "God’s Plan",
     "Artiste": "Drake",
     "Nbr": 2321600141,
@@ -130,7 +129,7 @@
   },
   {
     "id": 17,
-    "Année": 2020,
+    "year": 2020,
     "Titre": "A Lot",
     "Artiste": "21 Savage featuring J. Cole",
     "Nbr": 831672499,
@@ -138,7 +137,7 @@
   },
   {
     "id": 18,
-    "Année": 2021,
+    "year": 2021,
     "Titre": "Savage",
     "Artiste": "Megan Thee Stallion featuring Beyoncé",
     "Nbr": 413063545,
@@ -146,7 +145,7 @@
   },
   {
     "id": 19,
-    "Année": 2022,
+    "year": 2022,
     "Titre": "Jail",
     "Artiste": "Kanye West featuring Jay-Z",
     "Nbr": 125752560,
@@ -154,7 +153,7 @@
   },
   {
     "id": 20,
-    "Année": 2023,
+    "year": 2023,
     "Titre": "The Heart Part 5",
     "Artiste": "Kendrick Lamar",
     "Nbr": 75614645,

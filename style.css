@@ -19,9 +19,9 @@
 html {
     margin: 0;
     padding: 0;
-    -ms-scroll-snap-type: y mandatory;
+    /* -ms-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
 }
 
 body {
@@ -34,8 +34,8 @@ section {
     margin: 0;
     height: 100%;
     width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
 }
 
 /* barre de scroll*/
@@ -89,7 +89,7 @@ p {
     color: white;
     font-family: 'Poppins-Bold';
     text-transform: uppercase;
-    top: 88%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -88%);
 }

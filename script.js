@@ -19,16 +19,14 @@ console.log(data)
         .attr("transform", `scale(1,-1)`)
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+    fetch('rapdata.json').then(function (response) {
+        response.json().then(function (data) {
+            data.forEach(function afficherap(items) {
+                var liste = document.querySelector(".chanteurs");
+                liste.innerHTML = liste.innerHTML + "<section id=" + items.id + "><img src='" + items["img"] + "'class='image'><p> Winner : " + items.year + " </p><h1></h1></section>";
 
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     fetch('rapdata.json').then(function (response) {
-//         response.json().then(function (data) {
-//             data.forEach(function afficheAnalogie(items) {
-//                 var liste = document.querySelector(".chanteurs");
-//                 liste.innerHTML = liste.innerHTML + "<section id=" + items.id + "><img src='" + items["image"] + "'class='imag'><div class='content'><h2>Si j’étais " + items.analogie + ", je serais " + items.valeurAnalogie + ".</h2><p>" + items.explication + "</p></div></section>";
-
-//             });
+            });
 
 
 // Popup
@@ -47,7 +45,7 @@ console.log(data)
 
 
 
-//         });
+        });
 
-//     })
-// });
+    })
+});

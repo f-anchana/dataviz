@@ -21,6 +21,20 @@ d3.json("rapdata.json").then(function (data) {
         .attr("fill", (d, i) => couleur[i % couleur.length])
         .attr("transform", `scale(1,-1)`)
     // .style("padding-right", "50px")
+    
+    d3.selectAll('.histobarre')
+        .on("mouseenter",function(e,d){
+            d3.selectAll('.histobarre')
+                .style("opacity",0.5)
+            d3.select( this )
+                .style("opacity",1)
+        })
+        .on("mouseleave",function(e,d){
+            d3.selectAll('.histobarre')
+                .style("opacity",1)
+        })
+        .on("mouseclick",function(e,d){
+        })
 })
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -204,7 +204,7 @@ h3 {
 
 }
 
-p {
+.p {
     margin-left: 3.75rem;
     width: 50vw;
 }
@@ -220,17 +220,18 @@ iframe {
 
 .about-h2 {
     font-family: "Ethnocentric";
-    margin-left: 5rem;
+    margin-left: 3.75rem;
+    padding-top: 3.125rem;
 }
 
 .about-h3 {
     font-family: "Ethnocentric";
-    margin-top: 5rem;
-    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-left: 3.75rem;
 }
 
 .about-p {
-    margin-left: 5rem;
+    margin-left: 3.75rem;
 }
 
 a {
@@ -242,4 +243,10 @@ a:hover {
     color: #8A6E56;
     transition: ease-in-out;
     text-decoration: underline;
+}
+
+.mentions-légale {
+    font-family: 'Ethnocentric';
+    font-size: large;
+    text-align: center;
 }

@@ -5,12 +5,14 @@
 }
 
 @font-face {
-    font-family: 'Goldman';
-    src:
-        url('./font/Goldman-Regular.woff2') format('woff'),
-        url('./font/Goldman-Regular.woff2') format('woff2'),
-        url('./font/goldman-bold.woff') format('woff'),
-        url('./font/Goldman-Bold.woff2') format('woff2');
+    font-family: 'Ethnocentric';
+    src: url('./font/ethnocentric-rg.woff') format('woff'), url('./font/ethnocentric-rg.woff2') format('woff2');
+    
+    font-family: 'Poppins';
+    src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regular.woff2') format('woff2');
+    
+    font-family: 'Poppins-Bold';
+    src: url('./font/Poppins-Bold.woff') format('woff'), url('./font/Poppins-Bold.woff2') format('woff2');
 
 }
 
@@ -21,7 +23,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Goldman';
+    font-family: 'Poppins';
 
 }
 
@@ -67,15 +69,13 @@ section {
 h1 {
     font-size: 8.331rem;
     margin: 0;
-    color: white;
-    text-transform: uppercase;
 }
 
 p {
     position: absolute;
     z-index: 1;
     color: white;
-    font-family: 'Goldman';
+    font-family: 'Poppins';
     text-transform: uppercase;
     top: 88%;
     left: 50%;
@@ -158,6 +158,8 @@ a.scroll span {
 #section2{
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Ethnocentric';
+    text-transform: uppercase;
 }
 
 .tube{

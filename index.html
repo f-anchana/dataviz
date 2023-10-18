@@ -32,22 +32,22 @@
                 Awards</h2>
         </div>
 
-        <svg width="100vmin" height="calc(100vmin * 200 / 350)" viewBox="-25 -100 400 200">
+        <svg width="75vw" height="calc(75vw * 220 / 120)" viewBox="-10 -110 250 120">
             <!-- vmin est le plus petit width et height et pour dessiner une ligne c'est avec line-->
     
             <defs>
-                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3" markerHeight="3" orient="auto">
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
+                <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3" markerHeight="3" orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="black" stroke-width="2px" />
                 </marker>
             </defs>   
-            <rect width="300" height="100" transform="translate(0,-100)" fill="#ddd"></rect>
+            <rect width="300" height="100" transform="translate(0,-100)" fill="#fff"></rect>
             <g id="objet"></g>
             <!-- c'est le JavaScript qui va le remplir mais faut bien le sélectionner donc on met un id-->
     
-            <line x1="0" y1="0" x2="0" y2="-98" stroke="black" marker-end="url(#arrow)"></line>
+            <line x1="0" y1="0" x2="0" y2="-130" stroke="black" marker-end="url(#arrow)"></line>
             <!-- c'est la ligne verticale qui part de bas en haut / comme le HTML c'est de haut en bas, alors plus on descend, plus les valeurs sont positives-->
     
-            <line x1="0" y1="0" x2="300" y2="0" stroke="black" marker-end="url(#arrow)"></line>
+            <line x1="0" y1="0" x2="230" y2="0" stroke="black" marker-end="url(#arrow)"></line>
         </svg>  
 
     </section>

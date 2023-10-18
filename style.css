@@ -72,7 +72,7 @@ section {
 }
 
 
-img{
+img {
     position: absolute;
 }
 
@@ -87,12 +87,12 @@ img{
     transform: translate(-50%, -88%);
 }
 
-.strokeleft{
+.strokeleft {
     left: 3%;
     top: 85%;
 }
 
-.strokeright{
+.strokeright {
     right: 3%;
     bottom: 85%;
 }
@@ -140,40 +140,40 @@ a.scroll span {
 
 /* Section 2 - Graphique */
 
-.strokeleft2{
+.strokeleft2 {
     left: 3%;
     top: 85%
 }
 
-.strokeright2{
+.strokeright2 {
     right: 3%;
     bottom: 85%;
 }
 
-svg{
+svg {
     transform: translate(15%, 5%);
 }
 
-#section2{
+#section2 {
     text-align: end;
     padding-top: 5rem;
     margin-right: 6.25rem;
     font-family: 'Ethnocentric';
 }
 
-.tube{
+.tube {
     color: #8A6E56;
 }
 
 /* Section 3 - Rappeurs */
 
-.rap{
+.rap {
     background-color: black;
     color: white;
 }
 
 
-h1{
+h1 {
     font-family: 'Poppins-bold';
     text-transform: uppercase;
     margin-top: 0;
@@ -181,21 +181,21 @@ h1{
     padding-top: 3.125rem;
 }
 
-h2{
+h2 {
     margin-left: 3.75rem;
     padding-top: 0.313rem;
     /* font-size: 1.2rem; */
     font-family: "Ethnocentric";
 }
 
-.image{
+.image {
     height: 100vh;
     right: 0;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
 }
 
-.artista{
+.artista {
     color: #8A6E56;
-
 }
 
 h3 {

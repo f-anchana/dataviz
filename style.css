@@ -19,6 +19,9 @@
 html {
     margin: 0;
     padding: 0;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +34,8 @@ section {
     margin: 0;
     height: 100%;
     width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 /* barre de scroll*/
@@ -53,7 +58,7 @@ section {
 /* Section 1 - page d'accueil */
 
 .fond1 {
-    background-image: url(./img/G-RAP.gif);
+    background-image: url(./img/GRAP.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

@@ -142,7 +142,7 @@ a.scroll span {
 
 .strokeleft2 {
     left: 3%;
-    top: 85%
+    top: 85%;
 }
 
 .strokeright2 {
@@ -200,20 +200,20 @@ h2 {
 
 h3 {
     margin-left: 3.75rem;
-    margin-top: 3rem;
-
+    margin-top: 2rem;
 }
 
-.p {
+.bio {
     margin-left: 3.75rem;
-    width: 50vw;
+    max-width: 50vw;
+    font-size: 0.90rem;
 }
 
 iframe {
     margin-left: 3.75rem;
-    margin-top: 3rem;
-    width: 24.375rem;
-    height: 14.375rem;
+    margin-top: 1.5rem;
+    max-width: 23rem;
+    height: 13rem;
 }
 
 /*Section 4 - About*/
@@ -236,7 +236,6 @@ iframe {
 
 a {
     color: black;
-    text-decoration: underline;
 }
 
 a:hover {
@@ -254,4 +253,14 @@ a:hover {
     font-family: 'Ethnocentric';
     font-size: large;
     text-align: center;
+}
+
+.strokeup{
+    left: 3%;
+    bottom: 85%;
+}
+
+.strokedown{
+    right: 3%;
+    top: 85%;
 }

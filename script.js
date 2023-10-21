@@ -2,8 +2,9 @@ let couleur = ["black", "#5E504C", "#8A6E56"];
 
 d3.json("rapdata.json").then(function (data) {
     console.log("youpi")
+    let espaceEntreBarres = 10;
     let largeur_baton = 210 / data.length;
-    210
+    // 210
     console.log(data)
     d3.select("#objet")
         .selectAll("g")
@@ -14,12 +15,12 @@ d3.json("rapdata.json").then(function (data) {
 
     d3.selectAll(".histobarre")
         .append("rect")
-        .attr("width", largeur_baton)
+        // .attr("width", largeur_baton)
+        // .attr("width", (d, i) => i * (largeur_baton - `${espaceEntreBarres}px`))
+        .attr("width", largeur_baton + `${espaceEntreBarres}px`)
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d, i) => couleur[i % couleur.length])
         .attr("transform", `scale(1,-1)`)
-
-
 
     d3.selectAll('.histobarre')
         .on("mouseenter", function (e, d) {
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         response.json().then(function (data) {
             data.forEach(function afficherap(items) {
                 var liste = document.querySelector(".chanteurs");
-                liste.innerHTML = liste.innerHTML + "<section class='rap' id=" + items.id + "><img src='" + items["img"] + "'class='image'><h1> Winner : " + items.year + " </h1><h2>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='p'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='p'>" + items["content-titre"] + "</p>" + items["frame"] + "</section>";
+                liste.innerHTML = liste.innerHTML + "<section class='rap' id=" + items.id + "><img src='" + items["img"] + "'class='image'><h1> Winner : " + items.year + " </h1><h2>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='bio'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='bio'>" + items["content-titre"] + "</p>" + items["frame"] + "</section>";
 
             });
 

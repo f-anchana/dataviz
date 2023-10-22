@@ -43,10 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         response.json().then(function (data) {
             data.forEach(function afficherap(items) {
                 var liste = document.querySelector(".chanteurs");
-                liste.innerHTML = liste.innerHTML + "<section class='rap' id=" + items.id + "><img src='" + items["img"] + "'class='image'><h1> Winner : " + items.year + " </h1><h2>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='bio'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='bio'>" + items["content-titre"] + "</p>" + items["frame"] + "</section>";
+                liste.innerHTML = liste.innerHTML + "<section id=" + items.id + "><img src='" + items["img"] + "'class='image' alt=''> <img class='strokeright' src='./img/strokeright.png' alt=''> <img class='strokedown' src='./img/strokedown.png' alt=''> <h1> Winner : " + items.year + " </h1><h2>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='bio'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='bio'>" + items["content-titre"] + "</p>" + items["frame"] + "</section>";
 
             });
 
+//         <img class="strokeright" src="./img/strokeright.png" alt="">
 
             // Popup
             // var popup = document.querySelector('.popup-visible')

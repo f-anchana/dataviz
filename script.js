@@ -35,6 +35,7 @@ d3.json("rapdata.json").then(function (data) {
         })
         .on("mouseclick", function (e, d) {
             //À FAIRE !!
+            d3.select(this)
         })
 })
 
@@ -47,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             });
 
-//         <img class="strokeright" src="./img/strokeright.png" alt="">
 
             // Popup
             // var popup = document.querySelector('.popup-visible')

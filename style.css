@@ -258,6 +258,7 @@ iframe {
     font-family: "Ethnocentric";
     margin-left: 6.25rem;
     padding-top: 6rem;
+    font-size: 1.25rem;
 }
 
 .about-h3 {
@@ -268,6 +269,7 @@ iframe {
 
 .about-p {
     margin-left: 6.25rem;
+    font-size: 0.75rem;
 }
 
 a {
@@ -282,13 +284,16 @@ a:hover {
 
 .logo_noir {
     width: 25vw;
+    top: 20%;
     right: 0;
+    margin-right: 11.25rem;
 }
 
 .mentions-légale {
     font-family: 'Ethnocentric';
-    font-size: large;
+    font-size: 0.938rem;
     text-align: center;
+    margin-top: 80px;
 }
 
 .strokeup{

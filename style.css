@@ -166,6 +166,7 @@ svg {
 }
 
 .nb-ecoute {
+    position: absolute;
     writing-mode: vertical-rl;
     text-orientation: upright;
 }

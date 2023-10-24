@@ -190,7 +190,9 @@ svg {
 /* Section 3 - Rappeurs */
 
 .chanteurs {
+    position: relative;
     background-color: black;
+    z-index: 0;
     color: white;
 }
 
@@ -217,14 +219,14 @@ h2 {
 
 .titre{
     font-size: 1.5rem;
-    max-width: 800px;
+    max-width: 1000px;
 
 }
 
 .image {
     height: 100vh;
-    /* z-index: 1; */
     right: 0;
+    z-index: -1;
 }
 
 .artista {
@@ -247,7 +249,7 @@ iframe {
     margin-left: 3.75rem;
     margin-top: 1.5rem;
     max-width: 23rem;
-    height: 13rem;
+    height: 10rem;
 }
 
 /*Section 4 - About*/

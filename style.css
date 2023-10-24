@@ -213,7 +213,6 @@ h2 {
 .image {
     height: 100vh;
     right: 0;
-    background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
 }
 
 .artista {

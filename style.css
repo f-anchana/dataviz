@@ -174,7 +174,7 @@ svg {
     text-transform: uppercase;
     letter-spacing: -5px;
     top: 12rem;
-    left: 10rem;
+    left: 15rem;
 }
 
 .annee {
@@ -184,7 +184,7 @@ svg {
     text-align: end;
     position: relative;
     top: -0.5rem;
-    right: 15rem;
+    right: 20rem;
 }
 
 /* Section 3 - Rappeurs */
@@ -293,7 +293,6 @@ a:hover {
     font-family: 'Ethnocentric';
     font-size: 0.938rem;
     text-align: center;
-    margin-top: 80px;
 }
 
 .strokeup{

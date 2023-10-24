@@ -173,14 +173,18 @@ svg {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -5px;
+    top: 12rem;
+    left: 10rem;
 }
 
 .annee {
     font-size: 0.75rem;
-    position: absolute;
     font-weight: bold;
     text-transform: uppercase;
-
+    text-align: end;
+    position: relative;
+    top: -0.5rem;
+    right: 15rem;
 }
 
 /* Section 3 - Rappeurs */

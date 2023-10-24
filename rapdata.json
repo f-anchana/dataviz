@@ -8,7 +8,8 @@
     "img": "img/eminem-1.jpg",
     "frame": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/7MJQ9Nfxzh8LPZ9e9u68Fq?utm_source=generator&theme=0\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
     "content-artist": "Marshall Bruce Mathers III, known as Eminem, was born October 17, 1972 in Saint Joseph, Missouri. He is an American rapper, producer, actor and label founder. He has sold more than 227.5 million records in the United States alone, making him one of the best-selling artists. He is also the artist who sold the most albums in the United States during the 21st century. He has more than 600 awards, including 15 Grammy Awards and an Oscar.",
-    "content-titre": "The song “Lose Yourself”, featured on the soundtrack of the film 8 Mile, will allow Eminem to win two Grammy Awards including the first Best Rap Song of the Year 2004. He will also receive his one and only Oscar for best original song."
+    "content-titre": "The song “Lose Yourself”, featured on the soundtrack of the film 8 Mile, will allow Eminem to win two Grammy Awards including the first Best Rap Song of the Year 2004. He will also receive his one and only Oscar for best original song.",
+    "mini" : "img/eminem-mini.png"
   },
   {
     "id": 2,

@@ -177,10 +177,9 @@ svg {
 
 .annee {
     font-size: 0.75rem;
-    position: absolute;
     font-weight: bold;
     text-transform: uppercase;
-
+    text-align: end;
 }
 
 /* Section 3 - Rappeurs */

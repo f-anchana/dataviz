@@ -2,7 +2,7 @@ let couleur = ["black", "#5E504C", "#8A6E56"];
 
 d3.json("rapdata.json").then(function (data) {
     console.log("youpi")
-    let espaceEntreBarres = 1;
+    let espaceEntreBarres = 1.4;
     let largeur_baton = 210 / data.length;
     // 210
     console.log(data)
@@ -15,8 +15,6 @@ d3.json("rapdata.json").then(function (data) {
 
     d3.selectAll(".histobarre")
         .append("rect")
-        // .attr("width", largeur_baton)
-        // .attr("width", (d, i) => i * (largeur_baton - `${espaceEntreBarres}px`)) 
         .attr("width", `${largeur_baton-espaceEntreBarres}px`)
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d, i) => couleur[i % couleur.length])
@@ -34,7 +32,6 @@ d3.json("rapdata.json").then(function (data) {
                 .style("opacity", 1)
         })
         .on("mouseclick", function (e, d) {
-            //À FAIRE !!
             d3.select(this)
         })
 })

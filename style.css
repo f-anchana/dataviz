@@ -76,17 +76,6 @@ img {
     position: absolute;
 }
 
-.explore {
-    position: absolute;
-    z-index: 1;
-    color: white;
-    font-family: 'Poppins-Bold';
-    text-transform: uppercase;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -88%);
-}
-
 .strokeleft {
     left: 3%;
     top: 85%;
@@ -99,6 +88,17 @@ img {
 
 
 /* bouton de scroll */
+
+.explore {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -88%);
+}
 
 a.scroll {
     position: absolute;
@@ -156,7 +156,7 @@ svg {
 
 #section2 {
     text-align: end;
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin-right: 6.25rem;
     font-family: 'Ethnocentric';
 }
@@ -164,6 +164,7 @@ svg {
 .tube {
     color: #8A6E56;
 }
+
 
 /* Section 3 - Rappeurs */
 
@@ -220,18 +221,18 @@ iframe {
 
 .about-h2 {
     font-family: "Ethnocentric";
-    margin-left: 3.75rem;
-    padding-top: 3.125rem;
+    margin-left: 6.25rem;
+    padding-top: 6rem;
 }
 
 .about-h3 {
     font-family: "Ethnocentric";
     margin-top: 3rem;
-    margin-left: 3.75rem;
+    margin-left: 6.25rem;
 }
 
 .about-p {
-    margin-left: 3.75rem;
+    margin-left: 6.25rem;
 }
 
 a {

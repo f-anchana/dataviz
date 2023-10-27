@@ -26,10 +26,11 @@ d3.json("rapdata.json").then(function (data) {
                 .style("opacity", 0.5)
             d3.select(this)
                 .style("opacity", 1)
+                .style("cursor", "pointer")
         })
         .on("mouseleave", function (e, d) {
             d3.selectAll('.histobarre')
-                .style("opacity", 1)
+                .style("opacity", 1)    
         })
         .on("mouseclick", function (e, d) {
             d3.select(this)

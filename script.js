@@ -15,7 +15,7 @@ d3.json("rapdata.json").then(function (data) {
 
     d3.selectAll(".histobarre")
         .append("rect")
-        .attr("width", `${largeur_baton-espaceEntreBarres}px`)
+        .attr("width", `${largeur_baton - espaceEntreBarres}px`)
         .attr("height", (d) => d.Nbr * 100 / 2000000000)
         .attr("fill", (d, i) => couleur[i % couleur.length])
         .attr("transform", `scale(1,-1)`)
@@ -43,26 +43,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 var liste = document.querySelector(".chanteurs");
                 liste.innerHTML = liste.innerHTML + "<section id=" + items.id + "><img src='" + items["img"] + "'class='image' alt=''> <img class='strokeright' src='./img/strokeright.png' alt=''> <img class='strokedown' src='./img/strokedown.png' alt=''> <h1> Winner : " + items.year + " </h1><h2>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='bio'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='bio'>" + items["content-titre"] + "</p>" + items["frame"] + "</section>";
 
-            });
-
-
-            // Popup
-            // var popup = document.querySelector('.popup-visible')
-            // var btnMentions = document.querySelector('.image-cliquable p')
-            // btnMentions.addEventListener('click', function () {
-            //   popup.style.display = 'block'
-            // })
-
-
-            // var fermer = document.querySelector('.fermer')
-            // fermer.addEventListener('click', function () {
-            //   popup.style.display = 'none'
-
-            // })
-
-
-
+            })
         });
+        
+
+        // Popup
+        var popup = document.querySelector('.popup-visible')
+        var btnMentions = document.querySelector('.mentions-légale p')
+        btnMentions.addEventListener('click', function () {
+          popup.style.display = 'block'
+        })
+        var fermer = document.querySelector('.fermer')
+        fermer.addEventListener('click', function () {
+          popup.style.display = 'none'
+        })
+
 
     })
 });
+

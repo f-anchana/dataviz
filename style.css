@@ -46,13 +46,12 @@ section {
 }
 
 *::-webkit-scrollbar-track {
-    background: none;
+    background-color: black;
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 0 0 10px #fff, 0 0 11px #fff, 0 0 30px #45a6eb, 0 0 50px #45abeb, 0 0 60px #459beb;
 }
 
 
@@ -271,11 +270,42 @@ a:hover {
     right: 0;
 }
 
-.mentions-légale {
+.mentions-légale p {
     font-family: 'Ethnocentric';
     font-size: large;
     text-align: center;
+    cursor: pointer;
 }
+
+ /* KELIS */
+.popup-visible {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+  }
+  
+  .popup-visible img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    right: 3%;
+    top: 5%;
+   
+  }
+  
+  .mention{
+    text-align: center;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* FIN */
 
 .strokeup{
     left: 3%;

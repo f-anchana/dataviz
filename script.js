@@ -26,10 +26,11 @@ d3.json("rapdata.json").then(function (data) {
                 .style("opacity", 0.5)
             d3.select(this)
                 .style("opacity", 1)
+                .style("cursor", "pointer")
         })
         .on("mouseleave", function (e, d) {
             d3.selectAll('.histobarre')
-                .style("opacity", 1)
+                .style("opacity", 1)    
         })
         .on("mouseclick", function (e, d) {
             d3.select(this)
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         response.json().then(function (data) {
             data.forEach(function afficherap(items) {
                 var liste = document.querySelector(".chanteurs");
-                liste.innerHTML = liste.innerHTML + "<section id=" + items.id + "><img src='" + items["img"] + "'class='image' alt=''> <img class='strokeright' src='./img/strokeright.png' alt=''> <img class='strokedown' src='./img/strokedown.png' alt=''> <h1> Winner : " + items.year + " </h1><h2>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='bio'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='bio'>" + items["content-titre"] + "</p>" + items["frame"] + "</section>";
+                liste.innerHTML +="<section id=" + items.id + "><img src='" + items["img"] + "'class='image' alt=''> <img class='strokeright' src='./img/strokeright.png' alt=''> <img class='strokedown' src='./img/strokedown.png' alt=''> <div class='contenu'> <h1> Winner : " + items.year + " </h1><h2 class='titre'>" + items.titre + " by <span class='artista'>" + items.artiste + "</span></h2><h3>Artist Biography :</h3><p class='bio'>" + items["content-artist"] + "</p><h3>About the Hit :</h3><p class='bio'>" + items["content-titre"] + "</p>" + items["frame"] + "</div></section>";
 
             })
         });

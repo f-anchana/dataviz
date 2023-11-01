@@ -92,9 +92,9 @@ img {
     position: absolute;
     z-index: 1;
     color: white;
-    font-family: 'Poppins-Bold';
+    font-family: 'Poppins';
     text-transform: uppercase;
-    top: 90%;
+    top: 87%;
     left: 50%;
     transform: translate(-50%, -88%);
 }
@@ -169,7 +169,7 @@ svg {
     position: absolute;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: -5px;
     top: 12rem;
@@ -178,7 +178,7 @@ svg {
 
 .annee {
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: end;
     position: relative;

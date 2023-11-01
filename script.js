@@ -97,8 +97,7 @@ fetch('rapdata.json').then(function (response) {
                     // Affichage de la section
                     section.style("display", "block");
 
-                    // Faites défiler jusqu'à la nouvelle section avec l'effet smooth scroll
-                    const sectionElement = section.node();
+                    let sectionElement = section.node();
                     sectionElement.scrollIntoView({ behavior: "smooth" });
                 });
 

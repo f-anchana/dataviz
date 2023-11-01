@@ -188,7 +188,8 @@ svg {
 
 /* Section 3 - Rappeurs */
 
-.chanteurs {
+
+#section-3{
     position: relative;
     background-color: black;
     z-index: 0;

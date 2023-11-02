@@ -149,7 +149,7 @@ a.scroll span {
 }
 
 svg {
-    transform: translate(38%, 1%);
+    transform: translate(20%, -2%);
 }
 
 h1 {
@@ -174,7 +174,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -5px;
     top: 12rem;
-    left: 20rem;
+    left: 10rem;
 }
 
 .annee {
@@ -183,7 +183,7 @@ h1 {
     text-transform: uppercase;
     text-align: end;
     position: relative;
-    right: 20rem;
+    right: 30rem;
     bottom: 8rem;
 }
 

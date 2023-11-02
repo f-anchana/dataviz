@@ -58,6 +58,8 @@ fetch('rapdata.json').then(function (response) {
                 .on("mouseenter", function (e, d) {
                     d3.selectAll('.histobarre').style("opacity", 0.5);
                     d3.select(this).style("opacity", 1).style("cursor", "pointer");
+
+
                 })
                 .on("mouseleave", function (e, d) {
                     d3.selectAll('.histobarre').style("opacity", 1);

@@ -9,7 +9,6 @@ fetch('rapdata.json').then(function (response) {
             let espaceEntreBarres = 1.4;
             let largeur_baton = 210 / data.length;
 
-
             d3.select("#objet")
                 .selectAll("g")
                 .data(data)
@@ -18,7 +17,7 @@ fetch('rapdata.json').then(function (response) {
                 .attr("id", (d) => d.id)
                 .attr("transform", (d, i) => `translate(${largeur_baton * i},0)`)
 
-
+            // Création des barres
             d3.selectAll(".histobarre")
                 .append("rect")
                 .attr("width", `${largeur_baton - espaceEntreBarres}px`)
@@ -64,7 +63,7 @@ fetch('rapdata.json').then(function (response) {
                     d3.selectAll('.histobarre').style("opacity", 1);
                 });
 
-
+            // Fonction qui permet de sélectionner une barre pour afficher l'artiste associé
 
             let sectioncontainer = d3.select("#section-3");
             d3.selectAll('.histobarre')
@@ -105,7 +104,7 @@ fetch('rapdata.json').then(function (response) {
 
     });
 
-    // Popup
+    // Popup de l'élément legal notice
     var popup = document.querySelector('.popup-visible');
     var btnMentions = document.querySelector('.mentions-légale p');
     btnMentions.addEventListener('click', function () {

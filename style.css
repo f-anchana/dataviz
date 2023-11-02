@@ -174,7 +174,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -5px;
     top: 12rem;
-    left: 15rem;
+    left: 20rem;
 }
 
 .annee {
@@ -183,8 +183,8 @@ h1 {
     text-transform: uppercase;
     text-align: end;
     position: relative;
-    top: -0.5rem;
     right: 20rem;
+    bottom: 8rem;
 }
 
 /* Section 3 - Rappeurs */
@@ -294,7 +294,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/*Popup*/
+/*Popup et contenu*/
 .popup-visible {
     z-index: 999;
     display: none;

@@ -92,7 +92,6 @@ img {
     position: absolute;
     z-index: 1;
     color: white;
-    font-family: 'Poppins';
     text-transform: uppercase;
     top: 87%;
     left: 50%;
@@ -150,14 +149,16 @@ a.scroll span {
 }
 
 svg {
-    transform: translate(30%, 5%);
+    transform: translate(38%, 1%);
 }
 
-#section2 {
+h1 {
     text-align: end;
     padding-top: 6rem;
     margin-right: 6.25rem;
     font-family: 'Ethnocentric';
+    text-transform: uppercase;
+    font-size: 1.25rem;
 }
 
 .tube {
@@ -197,14 +198,7 @@ svg {
 }
 
 
-h1 {
-    font-family: 'Poppins-bold';
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-left: 3.75rem;
-    padding-top: 3.125rem;
-    font-size: 1.25rem;
-}
+
 
 h2 {
     margin-left: 3.75rem;
@@ -289,11 +283,15 @@ a:hover {
     margin-right: 11.25rem;
 }
 
-.mentions-légale p {
+.mentions-légale{
     font-family: 'Ethnocentric';
     font-size: 0.938rem;
     text-align: center;
     cursor: pointer;
+}
+
+.mentions-légale p:hover{
+    text-decoration: underline;
 }
 
 /*Popup*/
@@ -305,8 +303,9 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
+    color: white;
+    overflow-y: scroll;
+    background-color: rgb(0, 0, 0);
 }
   
 .popup-visible img {

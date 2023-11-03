@@ -9,6 +9,7 @@ fetch('rapdata.json').then(function (response) {
             let espaceEntreBarres = 1.4;
             let largeur_baton = 210 / data.length;
 
+
             d3.select("#objet")
                 .selectAll("g")
                 .data(data)
@@ -17,7 +18,7 @@ fetch('rapdata.json').then(function (response) {
                 .attr("id", (d) => d.id)
                 .attr("transform", (d, i) => `translate(${largeur_baton * i},0)`)
 
-            // Création des barres
+
             d3.selectAll(".histobarre")
                 .append("rect")
                 .attr("width", `${largeur_baton - espaceEntreBarres}px`)
@@ -54,26 +55,39 @@ fetch('rapdata.json').then(function (response) {
                 .attr("font-size", "3px")
                 .attr("fill", "black");
 
+            let barreSelectionnee = null;
+
             d3.selectAll('.histobarre')
                 .on("mouseenter", function (e, d) {
                     d3.selectAll('.histobarre').style("opacity", 0.5);
-                    d3.select(this).style("opacity", 1).style("cursor", "pointer");
-
-
+                    d3.select(this).style("opacity", 1).classed("selected", true).style("cursor", "pointer");
                 })
                 .on("mouseleave", function (e, d) {
-                    d3.selectAll('.histobarre').style("opacity", 1);
+                    if (barreSelectionnee) {
+                        d3.select(barreSelectionnee).style("opacity", 1);
+                    } else {
+                        // Rétablissez l'opacité normale pour toutes les barres
+                        d3.selectAll('.histobarre').style("opacity", 1);
+                    }
+
                 });
 
-            // Fonction qui permet de sélectionner une barre pour afficher l'artiste associé
+
 
             let sectioncontainer = d3.select("#section-3");
             d3.selectAll('.histobarre')
                 .on("click", function (e, d) {
+                    barreSelectionnee = this;
                     let sectionId = d.id;
 
                     // Suppression des anciennes sections de l'élément <div id="section-3">
                     sectioncontainer.selectAll("section").remove();
+
+                    // Rétablissez l'opacité normale pour toutes les barres
+                    d3.selectAll('.histobarre').style("opacity", 0.5);
+
+                    // Appliquez l'opacité de 1 à la barre sélectionnée
+                    d3.select(this).style("opacity", 1).classed("selected", true);
 
                     // Création d'une section avec l'id correspondant
                     const section = sectioncontainer.append("section")
@@ -106,7 +120,7 @@ fetch('rapdata.json').then(function (response) {
 
     });
 
-    // Popup de l'élément legal notice
+    // Popup
     var popup = document.querySelector('.popup-visible');
     var btnMentions = document.querySelector('.mentions-légale p');
     btnMentions.addEventListener('click', function () {

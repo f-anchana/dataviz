@@ -60,18 +60,23 @@ fetch('rapdata.json').then(function (response) {
             d3.selectAll('.histobarre')
                 .on("mouseenter", function (e, d) {
                     d3.selectAll('.histobarre').style("opacity", 0.5);
-                    d3.select(this).style("opacity", 1).classed("selected", true).style("cursor", "pointer");
+                    d3.select(this).style("opacity", 1).style("cursor", "pointer");
+                     // Pour afficher les images miniatures quand on passe la souris au hover
+                    d3.select("#image-miniature").attr("src", d.mini);
+                    d3.select("#description").text(`${d.Nbr} streams on Spotify`);
                 })
                 .on("mouseleave", function (e, d) {
                     if (barreSelectionnee) {
                         d3.select(barreSelectionnee).style("opacity", 1);
+                         // Pour faire disparaître l'image miniature et sa description lorsque la souris sort du bâton
+                        d3.select("#image-miniature").attr("src", "");
+                        d3.select("#description").text("");
                     } else {
-                        // Rétablissez l'opacité normale pour toutes les barres
                         d3.selectAll('.histobarre').style("opacity", 1);
+
                     }
 
                 });
-
 
 
             let sectioncontainer = d3.select("#section-3");
@@ -87,7 +92,7 @@ fetch('rapdata.json').then(function (response) {
                     d3.selectAll('.histobarre').style("opacity", 0.5);
 
                     // Appliquez l'opacité de 1 à la barre sélectionnée
-                    d3.select(this).style("opacity", 1).classed("selected", true);
+                    d3.select(this).style("opacity", 1);
 
                     // Création d'une section avec l'id correspondant
                     const section = sectioncontainer.append("section")

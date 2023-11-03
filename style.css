@@ -191,6 +191,14 @@ svg {
     opacity: 1;
 }
 
+.miniature p{
+    font-size: 10px;
+}
+
+#image-miniature{
+    width: 100px;
+}
+
 /* Section 3 - Rappeurs */
 
 
@@ -201,22 +209,18 @@ svg {
     color: white;
 }
 
-
-
-
 h2 {
-    margin-left: 3.75rem;
     padding-top: 0.313rem;
     font-size: 1.2rem;
     font-family: "Ethnocentric";
 }
 
 .contenu{
+    margin-left: 3.75rem;
     padding-top: 3.75rem;
 }
 
 .contenu h1{
-    margin-left: 3.75rem;
     text-transform: uppercase;
     font-size: 0.75em;
     font-weight: 800;
@@ -239,19 +243,16 @@ h2 {
 }
 
 h3 {
-    margin-left: 3.75rem;
     margin-top: 2rem;
     font-size: 0.75rem;
 }
 
 .bio {
-    margin-left: 3.75rem;
     max-width: 50vw;
     font-size: 0.75rem;
 }
 
 iframe {
-    margin-left: 3.75rem;
     margin-top: 1.5rem;
     max-width: 23rem;
     height: 10rem;
@@ -343,6 +344,10 @@ h4{
 .mention p {
     text-align: left;
     font-weight: 400;
+}
+
+.croix{
+    position: fixed;
 }
 
 

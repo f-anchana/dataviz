@@ -184,11 +184,12 @@ svg {
     text-align: end;
     position: relative;
     right: 30rem;
-    bottom: 8rem;
+    bottom: 9rem;
 }
 
-.selected {
-    opacity: 1;
+.miniature{
+    display: flex;
+    justify-content: center;
 }
 
 .miniature p{

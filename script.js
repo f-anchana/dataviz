@@ -26,6 +26,50 @@ fetch('rapdata.json').then(function (response) {
                 .attr("fill", (d, i) => couleur[i % couleur.length])
                 .attr("transform", `scale(1,-1)`);
 
+
+            // groupe pour les lignes représentant les chiffres clés
+
+            function formatNumberWithSpaces(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            }
+            
+            let minY = 0;
+            let maxY = 2000000000;
+            let espace = 400000000;
+            let chiffresClés = [];
+            for (let i = minY; i <= maxY; i += espace) {
+                chiffresClés.push(i);
+            }
+            let svg = d3.select("svg");
+            let verticalSpacing = 20; // Ajustement de l'espacement vertical fixe entre les étiquettes
+
+
+            svg.selectAll(".tiret")
+                .data(chiffresClés)
+                .enter()
+                .append("line")
+                .attr("class", ".tiret")
+                .attr("x1", -3)
+                .attr("y1", (d, i) => -(i * verticalSpacing))
+                .attr("y2", (d, i) => -(i * verticalSpacing))
+                .attr("stroke", "black")
+                .attr("stroke-width", 0.2);
+
+
+            svg.selectAll(".chiffresClés")
+                .data(chiffresClés)
+                .enter()
+                .append("text")
+                .attr("class", "chiffresClés")
+                .attr("x", -8)
+                .attr("y", (d, i) => -(i * verticalSpacing))
+                .text((d) => formatNumberWithSpaces(d)) // Utilisez la fonction pour formater les nombres avec des espaces
+                .attr("text-anchor", "end")
+                .attr("font-size", "3px")
+                .attr("fill", "black");
+
+
+
             // groupe pour les lignes représentant les années
             let anneesGroup = d3.select("#objet")
                 .append("g")
@@ -55,6 +99,9 @@ fetch('rapdata.json').then(function (response) {
                 .attr("font-size", "3px")
                 .attr("fill", "black");
 
+
+
+            // Effet selection barre
             let barreSelectionnee = null;
 
             d3.selectAll('.histobarre')
@@ -79,23 +126,26 @@ fetch('rapdata.json').then(function (response) {
                 });
 
 
-            let sectioncontainer = d3.select("#section-3");
+
+
+
+
+
+            let contenusection = d3.select("#section-3");
             d3.selectAll('.histobarre')
                 .on("click", function (e, d) {
                     barreSelectionnee = this;
                     let sectionId = d.id;
 
                     // Suppression des anciennes sections de l'élément <div id="section-3">
-                    sectioncontainer.selectAll("section").remove();
+                    contenusection.selectAll("section").remove();
 
-                    // Rétablissez l'opacité normale pour toutes les barres
+
                     d3.selectAll('.histobarre').style("opacity", 0.5);
-
-                    // Appliquez l'opacité de 1 à la barre sélectionnée
                     d3.select(this).style("opacity", 1);
 
                     // Création d'une section avec l'id correspondant
-                    const section = sectioncontainer.append("section")
+                    const section = contenusection.append("section")
                         .attr("id", "section-" + sectionId);
 
                     // Remplissement de la section avec les données

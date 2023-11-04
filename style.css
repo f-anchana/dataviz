@@ -168,13 +168,13 @@ svg {
 .nb-ecoute {
     font-size: 0.75rem;
     position: absolute;
-    /* writing-mode: vertical-rl; */
-    /* text-orientation: upright; */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
     font-weight: 600;
     text-transform: uppercase;
-    /* letter-spacing: -5px; */
-    top: 7rem;
-    left: 11rem;
+    letter-spacing: -5px;
+    top: 12rem;
+    left: 10rem;
 }
 
 .annee {
@@ -183,10 +183,14 @@ svg {
     text-transform: uppercase;
     text-align: end;
     position: relative;
-    right: 25rem;
-    bottom: 8rem;
+    right: 30rem;
+    bottom: 9rem;
 }
 
+.miniature{
+    display: flex;
+    justify-content: center;
+}
 
 .miniature p {
     font-size: 10px;
@@ -344,6 +348,9 @@ h4 {
     font-weight: 400;
 }
 
+.croix{
+    position: fixed;
+}
 
 
 /* FIN */

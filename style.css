@@ -135,6 +135,13 @@ a.scroll span {
     }
 }
 
+/* Section explication */
+
+#section1{
+    background-color: black;
+    color: white;
+}
+
 
 /* Section 2 - Graphique */
 

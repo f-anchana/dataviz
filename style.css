@@ -201,15 +201,13 @@ svg {
 
 .media_body h1{
 font-size: 0.9rem;
-}
 
-.miniature p {
-    font-size: 10px;
 }
 
 #image-miniature {
-    width: 100px;
+    width: 76px;
 }
+
 
 /* Section 3 - Rappeurs */
 

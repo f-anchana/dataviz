@@ -110,9 +110,9 @@ fetch('rapdata.json').then(function (response) {
                     d3.select(this).style("opacity", 1).style("cursor", "pointer");
                      // Pour afficher les images miniatures quand on passe la souris au hover
                     d3.select("#image-miniature").attr("src", d.mini);
-                    d3.select("#title").text(`${d.titre} by ${d.artiste}`);
-                    // d3.select(`${d.artiste}`).style("fill", "#8A6E56");
+                    d3.select("#title").html(`${d.titre} by <span class='artista'> ${d.artiste} </span>`);
                     d3.select("#description").text(`${d.Nbr} streams on Spotify`);
+                    d3.select("#description").text(formatNumberWithSpaces(d.Nbr) + " streams on Spotify");
                 })
                 .on("mouseleave", function (e, d) {
                     if (barreSelectionnee) {
@@ -120,6 +120,7 @@ fetch('rapdata.json').then(function (response) {
                          // Pour faire disparaître l'image miniature et sa description lorsque la souris sort du bâton
                         d3.select("#image-miniature").attr("src", "");
                         d3.select("#description").text("");
+                        d3.select("#title").text("");
                     } else {
                         d3.selectAll('.histobarre').style("opacity", 1);
 

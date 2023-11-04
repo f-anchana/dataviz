@@ -19,9 +19,9 @@
 html {
     margin: 0;
     padding: 0;
-    -ms-scroll-snap-type: y mandatory;
+    /* -ms-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
 }
 
 body {
@@ -35,8 +35,8 @@ section {
     margin: 0;
     height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
 }
 
 /* barre de scroll*/
@@ -186,7 +186,21 @@ svg {
 
 .miniature{
     display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    position: absolute;
+    right: 8%;
+    top: 35%;
+}
+
+.media_body{
+    margin-left: 120px;
+    max-width: 15.625rem;
+}
+
+.media_body h1{
+font-size: 0.9rem;
 }
 
 .miniature p {
@@ -220,7 +234,7 @@ h2 {
 
 .contenu h1 {
     text-transform: uppercase;
-    font-size: 0.75em;
+    font-size: 1.25rem;
     font-weight: 800;
 }
 

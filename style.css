@@ -7,10 +7,10 @@
 @font-face {
     font-family: 'Ethnocentric';
     src: url('./font/ethnocentric-rg.woff') format('woff'), url('./font/ethnocentric-rg.woff2') format('woff2');
-    
+
     font-family: 'Poppins';
     src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regular.woff2') format('woff2');
-    
+
     font-family: 'Poppins-Bold';
     src: url('./font/Poppins-Bold.woff') format('woff'), url('./font/Poppins-Bold.woff2') format('woff2');
 
@@ -188,18 +188,18 @@ svg {
 }
 
 
-.miniature p{
+.miniature p {
     font-size: 10px;
 }
 
-#image-miniature{
+#image-miniature {
     width: 100px;
 }
 
 /* Section 3 - Rappeurs */
 
 
-#section-3{
+#section-3 {
     position: relative;
     background-color: black;
     z-index: 0;
@@ -212,18 +212,18 @@ h2 {
     font-family: "Ethnocentric";
 }
 
-.contenu{
+.contenu {
     margin-left: 3.75rem;
     padding-top: 3.75rem;
 }
 
-.contenu h1{
+.contenu h1 {
     text-transform: uppercase;
     font-size: 0.75em;
     font-weight: 800;
 }
 
-.titre{
+.titre {
     font-size: 1.5rem;
     max-width: 1000px;
 
@@ -292,7 +292,7 @@ a:hover {
     margin-right: 11.25rem;
 }
 
-.mentions-légale{
+.mentions-légale {
     padding-top: 20px;
     font-family: 'Ethnocentric';
     font-size: 0.938rem;
@@ -300,7 +300,7 @@ a:hover {
     cursor: pointer;
 }
 
-.mentions-légale p:hover{
+.mentions-légale p:hover {
     text-decoration: underline;
 }
 
@@ -318,23 +318,24 @@ a:hover {
     background-color: rgb(0, 0, 0);
     line-height: 2.5rem;
 }
-  
+
 .popup-visible img {
     cursor: pointer;
     width: 30px;
     height: 30px;
     right: 3%;
     top: 5%;
+    position: fixed;
 }
-  
-.mention{
+
+.mention {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     max-width: 60vw;
 }
 
-h4{
+h4 {
     text-align: center;
 }
 
@@ -347,12 +348,101 @@ h4{
 
 /* FIN */
 
-.strokeup{
+.strokeup {
     left: 3%;
     bottom: 85%;
 }
 
-.strokedown{
+.strokedown {
     right: 3%;
     top: 85%;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #section2 {
+        font-size: 1em;
+    }
+
+    svg {
+        transform: translate(30%, 20%);
+    }
+
+    .nb-ecoute {
+        top: 10rem;
+        left: 10rem;
+        font-size: 0.6em;
+    }
+
+    .annee {
+        font-size: 0.6em;
+        right: 10rem;
+        bottom: 0rem;
+    }
+
+
+    .bio {
+        max-width: 70vw;
+        font-size: 0.6em;
+    }
+
+    .titre {
+        font-size: 1em;
+    }
+
+    .about-p {
+        max-width: 50vw;
+        font-size: 0.6em;
+    }
+
+    .logo_noir {
+        margin-right: 7rem;
+        width: 15vw;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1254px) {
+    .bio {
+        max-width: 70vw;
+        font-size: 0.7em;
+    }
+
+    .logo_noir {
+        margin-right: 7rem;
+        width: 20vw;
+    }
+
+    .about-p {
+        max-width: 50vw;
+        font-size: 0.7em;
+    }
+
+    svg {
+        transform: translate(25%, 10%);
+    }
+
+    .nb-ecoute {
+        top: 11rem;
+    }
+
+    .annee {
+        right: 18rem;
+        bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1254px) and (max-width: 1450px) {
+
+    .nb-ecoute {
+        top: 8rem;
+    }
+
+    .annee {
+        right: 17rem;
+        bottom: 8rem;
+    }
+
+
+
 }

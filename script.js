@@ -3,8 +3,6 @@ fetch('rapdata.json').then(function (response) {
 
 
         d3.json("rapdata.json").then(function (data) {
-
-            console.log(data);
             let couleur = ["black", "#5E504C", "#8A6E56"];
             let espaceEntreBarres = 1.4;
             let largeur_baton = 210 / data.length;
@@ -27,11 +25,12 @@ fetch('rapdata.json').then(function (response) {
                 .attr("transform", `scale(1,-1)`);
 
 
-            // groupe pour les lignes représentant les chiffres clés
-
+            // Fonction qui permet d'apporter des espaces dans les grands nombres en les transformant en string
             function formatNumberWithSpaces(number) {
-                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                return number.toLocaleString();
             }
+            
+
             
             let minY = 0;
             let maxY = 2000000000;

@@ -168,13 +168,10 @@ svg {
 .nb-ecoute {
     font-size: 0.75rem;
     position: absolute;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: -5px;
-    top: 12rem;
-    left: 10rem;
+    top: 7rem;
+    left: 11rem;
 }
 
 .annee {
@@ -183,8 +180,8 @@ svg {
     text-transform: uppercase;
     text-align: end;
     position: relative;
-    right: 30rem;
-    bottom: 9rem;
+    right: 25rem;
+    bottom: 8rem;
 }
 
 .miniature{

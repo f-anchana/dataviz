@@ -137,11 +137,16 @@ a.scroll span {
 
 /* Section explication */
 
-#section1{
+#section1 {
     background-color: black;
     color: white;
 }
 
+.explication {
+    margin: auto;
+    width: 60vw;
+    padding-top: 5rem;
+}
 
 /* Section 2 - Graphique */
 
@@ -207,8 +212,7 @@ svg {
 }
 
 .media_body h1{
-font-size: 0.9rem;
-
+    font-size: 0.9rem;
 }
 
 #image-miniature {

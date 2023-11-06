@@ -362,6 +362,7 @@ h4 {
 .mention p {
     text-align: left;
     font-weight: 400;
+    line-height: 2;
 }
 
 .croix{

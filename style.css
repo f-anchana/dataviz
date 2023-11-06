@@ -86,7 +86,7 @@ img {
 }
 
 
-/* bouton de scroll */
+/* Bouton de scroll */
 
 .explore {
     position: absolute;
@@ -146,7 +146,13 @@ a.scroll span {
     margin: auto;
     width: 60vw;
     padding-top: 5rem;
+    -webkit-animation: slidein 2s infinite ease-in;
+    animation: slidein 2s infinite ease-in;
+    animation: 3s ease-in 1s infinite reverse forwards running slidein;
+    animation-timeline: scroll();
+    animation-timeline: scroll(scroller axis);
 }
+
 
 /* Section 2 - Graphique */
 

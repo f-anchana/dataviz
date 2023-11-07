@@ -29,9 +29,9 @@ fetch('rapdata.json').then(function (response) {
             function formatNumberWithSpaces(number) {
                 return number.toLocaleString();
             }
-            
 
-            
+
+            // Partie concernant l'axe des ordonnées (nombre de streams)
             let minY = 0;
             let maxY = 2000000000;
             let espace = 400000000;
@@ -40,7 +40,7 @@ fetch('rapdata.json').then(function (response) {
                 chiffresClés.push(i);
             }
             let svg = d3.select("svg");
-            let verticalSpacing = 20; // Ajustement de l'espacement vertical fixe entre les étiquettes
+            let verticalSpacing = 20; // Ajustement de l'espacement vertical fixe entre les nombres de streams (légende)
 
 
             svg.selectAll(".tiret")
@@ -62,14 +62,14 @@ fetch('rapdata.json').then(function (response) {
                 .attr("class", "chiffresClés")
                 .attr("x", -8)
                 .attr("y", (d, i) => -(i * verticalSpacing))
-                .text((d) => formatNumberWithSpaces(d)) // Utilisez la fonction pour formater les nombres avec des espaces
+                .text((d) => formatNumberWithSpaces(d)) // On appelle la fonction pour appliquer des espaces entre les nombres
                 .attr("text-anchor", "end")
                 .attr("font-size", "3px")
                 .attr("fill", "black");
 
 
 
-            // groupe pour les lignes représentant les années
+            // Partie concernant l'axe des abscisses (années)
             let anneesGroup = d3.select("#objet")
                 .append("g")
                 .attr("class", "annees");
@@ -81,7 +81,6 @@ fetch('rapdata.json').then(function (response) {
                 .append("line")
                 .attr("x1", (d, i) => largeur_baton * i + (largeur_baton - espaceEntreBarres) / 2)
                 .attr("x2", (d, i) => largeur_baton * i + (largeur_baton - espaceEntreBarres) / 2)
-                .attr("y1", 0.1)
                 .attr("y2", 3)
                 .attr("stroke", "black")
                 .attr("stroke-width", 0.2);
@@ -107,7 +106,8 @@ fetch('rapdata.json').then(function (response) {
                 .on("mouseenter", function (e, d) {
                     d3.selectAll('.histobarre').style("opacity", 0.5);
                     d3.select(this).style("opacity", 1).style("cursor", "pointer");
-                     // Pour afficher les images miniatures quand on passe la souris au hover
+
+                    // Pour afficher les images miniatures quand on passe la souris au hover
                     d3.select("#image-miniature").attr("src", d.mini);
                     d3.select("#title").html(`${d.titre} by <span class='artista'> ${d.artiste} </span>`);
                     d3.select("#description").text(`${d.Nbr} streams on Spotify`);
@@ -116,39 +116,36 @@ fetch('rapdata.json').then(function (response) {
                 .on("mouseleave", function (e, d) {
                     if (barreSelectionnee) {
                         d3.select(barreSelectionnee).style("opacity", 1);
-                         // Pour faire disparaître l'image miniature et sa description lorsque la souris sort du bâton
+                        // Pour faire disparaître l'image miniature et sa description lorsque la souris sort du bâton
                         d3.select("#image-miniature").attr("src", "");
                         d3.select("#description").text("");
                         d3.select("#title").text("");
-                    } else {
-                        d3.selectAll('.histobarre').style("opacity", 1);
-
                     }
+
+                    if (this != barreSelectionnee) {
+                        d3.select(this).style("opacity", 0.5);
+                    }
+            
 
                 });
 
 
-
-
-
-
-
+            // Fonction click pour sélectionner l'artiste associé au bâton 
             let contenusection = d3.select("#section-3");
             d3.selectAll('.histobarre')
                 .on("click", function (e, d) {
                     barreSelectionnee = this;
                     let sectionId = d.id;
 
-                    // Suppression des anciennes sections de l'élément <div id="section-3">
+                    // Suppression des anciennes sections
                     contenusection.selectAll("section").remove();
-
 
                     d3.selectAll('.histobarre').style("opacity", 0.5);
                     d3.select(this).style("opacity", 1);
 
                     // Création d'une section avec l'id correspondant
-                    const section = contenusection.append("section")
-                        .attr("id", "section-" + sectionId);
+                    let section = contenusection.append("section")
+                        .attr("id", sectionId);
 
                     // Remplissement de la section avec les données
                     section.html(`

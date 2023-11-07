@@ -14,6 +14,9 @@
     font-family: 'Poppins-Bold';
     src: url('./font/Poppins-Bold.woff') format('woff'), url('./font/Poppins-Bold.woff2') format('woff2');
 
+    font-family: 'Poppins-SemiBold';
+    src: url('./font/Poppins-SemiBold.woff') format('woff'), url('./font/Poppins-SemiBold.woff2') format('woff2');
+
 }
 
 html {
@@ -140,12 +143,48 @@ a.scroll span {
 #section1 {
     background-color: black;
     color: white;
+    display: flex;
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-right: 0;
+}
+
+.taille100 {
+    height: 50vh;
+}
+
+.taille400 {
+    height: 100vh;
+}
+
+.poppins100 {
+    font-size: 8.3331rem;
+    text-transform: uppercase;
+    font-family: 'Poppins-SemiBold';
+    line-height: 0.1;
+}
+
+.ethno100 {
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    font-family: 'Ethnocentric';
+    line-height: 0.1;
+}
+
+.poppins400 {
+    font-size: 33.3325rem;
+    font-family: 'Poppins-SemiBold';
+    line-height: 0;
 }
 
 .explication {
     margin: auto;
-    width: 60vw;
-    padding-top: 5rem;
+    margin-left: 0;
+    width: 30vw;
     -webkit-animation: slidein 2s infinite ease-in;
     animation: slidein 2s infinite ease-in;
     animation: 3s ease-in 1s infinite reverse forwards running slidein;

@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 fetch('rapdata.json').then(function (response) {
     response.json().then(function () {
 
@@ -99,9 +100,6 @@ fetch('rapdata.json').then(function (response) {
 
 
 
-            // Effet selection barre
-            let barreSelectionnee = null;
-
             d3.selectAll('.histobarre')
                 .on("mouseenter", function (e, d) {
                     d3.selectAll('.histobarre').style("opacity", 0.5);
@@ -112,20 +110,22 @@ fetch('rapdata.json').then(function (response) {
                     d3.select("#title").html(`${d.titre} by <span class='artista'> ${d.artiste} </span>`);
                     d3.select("#description").text(`${d.Nbr} streams on Spotify`);
                     d3.select("#description").text(formatNumberWithSpaces(d.Nbr) + " streams on Spotify");
+                    // console.log(this);
                 })
+                // .on("mouseleave", function (e, d) {
+                //     if (barreSelectionnee) {
+                //         d3.selectAll(barreSelectionnee).style("opacity", 1);
+                //         // Pour faire disparaître l'image miniature et sa description lorsque la souris sort du bâton
+                //         d3.select("#image-miniature").attr("src", "");
+                //         d3.select("#description").text("");
+                //         d3.select("#title").text("");
+                //     }
                 .on("mouseleave", function (e, d) {
-                    if (barreSelectionnee) {
-                        d3.select(barreSelectionnee).style("opacity", 1);
+                        d3.selectAll('.histobarre').style("opacity", 1);
                         // Pour faire disparaître l'image miniature et sa description lorsque la souris sort du bâton
                         d3.select("#image-miniature").attr("src", "");
                         d3.select("#description").text("");
                         d3.select("#title").text("");
-                    }
-
-                    if (this != barreSelectionnee) {
-                        d3.select(this).style("opacity", 0.5);
-                    }
-            
 
                 });
 
@@ -134,15 +134,16 @@ fetch('rapdata.json').then(function (response) {
             let contenusection = d3.select("#section-3");
             d3.selectAll('.histobarre')
                 .on("click", function (e, d) {
-                    barreSelectionnee = this;
                     let sectionId = d.id;
 
                     // Suppression des anciennes sections
                     contenusection.selectAll("section").remove();
 
-                    d3.selectAll('.histobarre').style("opacity", 0.5);
                     d3.select(this).style("opacity", 1);
+                    d3.selectAll('.histobarre').style("opacity", 0.5);
+                    console.log("click");
 
+                    
                     // Création d'une section avec l'id correspondant
                     let section = contenusection.append("section")
                         .attr("id", sectionId);
@@ -172,7 +173,7 @@ fetch('rapdata.json').then(function (response) {
 
         });
 
-    });
+    })});
 
     // Popup
     var popup = document.querySelector('.popup-visible');

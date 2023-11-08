@@ -185,3 +185,30 @@ fetch('rapdata.json').then(function (response) {
         popup.style.display = 'none';
     });
 })
+
+// Barre de scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollIndicator = document.querySelector(".scroll-indicator");
+    const content = document.querySelector("#section1");
+  
+    const observer = new IntersectionObserver(handleIntersect);
+    observer.observe(content);
+  
+    function handleIntersect(entries) {
+      const el = entries[0];
+      if (el.isIntersecting) {
+        window.addEventListener("scroll", indicatorAnimation);
+      } else if (!el.isIntersecting) {
+        window.removeEventListener("scroll", indicatorAnimation);
+      }
+    }
+  
+    function indicatorAnimation(e) {
+      if (window.scrollY > content.offsetTop) {
+        const percentage = ((window.scrollY - content.offsetTop) / (content.scrollHeight - window.innerHeight) * 100).toFixed(2);
+        scrollIndicator.style.transform = `scaleY(${percentage / 100})`;
+      } else {
+        scrollIndicator.style.transform = `scaleY(0)`;
+      }
+    }
+});

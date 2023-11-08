@@ -30,7 +30,7 @@ html {
 body {
     margin: 0;
     font-family: 'Poppins';
-
+    z-index: 0;
 }
 
 section {
@@ -40,21 +40,39 @@ section {
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    z-index: 0;
 }
 
-/* barre de scroll*/
+/* Barre de scroll*/
+
+/* Cacher l'ancienne barre */
 
 *::-webkit-scrollbar {
-    width: 1px;
+    width: 0px;
 }
 
-*::-webkit-scrollbar-track {
+/*::-webkit-scrollbar-track {
     background-color: black;
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
+}*/
+
+/* Nouvelle barre */
+
+.scroll-indicator {
+    z-index: 100;
+    position: fixed;
+    top: 30vh;
+    right: 1vw;
+    height: 20vh;
+    width: 10px;
+    transform-origin: top;
+    transform: scaleX(0);
+    background: linear-gradient(0deg, #000, #868686);
+    transition: transform 0.2s ease-out;
 }
 
 
@@ -72,7 +90,6 @@ section {
     place-items: center;
     z-index: 0;
 }
-
 
 img {
     position: absolute;
@@ -144,6 +161,7 @@ a.scroll span {
     background-color: black;
     color: white;
     display: flex;
+    z-index: 0;
 }
 
 .g-rap {
@@ -217,6 +235,7 @@ svg {
     font-family: 'Ethnocentric';
     text-transform: uppercase;
     font-size: 1.25rem;
+    z-index: 0;
 }
 
 .tube {

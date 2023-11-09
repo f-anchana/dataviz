@@ -263,12 +263,19 @@ svg {
 
 .media_body h1{
     font-size: 0.9rem;
+    margin-bottom: 0;
+
 }
 
 #image-miniature {
     width: 76px;
+    top: 5%;
 }
 
+.description{
+    margin-top: 0;
+
+}
 
 /* Section 3 - Rappeurs */
 
@@ -481,26 +488,28 @@ h4 {
         margin-right: 7rem;
         width: 15vw;
     }
-    .miniature{
-        right: 8%;
-        bottom: 20%;
-    }
     
     .media_body{
-        margin-left: 96px;
-        max-width: 15.625rem;
+        margin-left: 50px;
     }
     
     .media_body h1{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        max-width: 16rem;
+
     }
     
     #image-miniature {
-        width: 40px;
+        width: 35px;
+    }
+
+    .miniature{
+        right: 3%;
+
     }
 
     #description{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     
 }
@@ -533,6 +542,31 @@ h4 {
         right: 18rem;
         bottom: 2rem;
     }
+
+    .media_body{
+        margin-left: 80px;
+    }
+    
+    .media_body h1{
+        font-size: 0.8rem;
+        max-width: 13rem;
+
+    }
+    
+    #image-miniature {
+        width: 60px;
+    }
+
+    .miniature{
+        right: 7%;
+
+    }
+
+    #description{
+        font-size: 0.8rem;
+        max-width: 15rem;
+
+    }
 }
 
 @media screen and (min-width: 1254px) and (max-width: 1450px) {
@@ -545,7 +579,6 @@ h4 {
         right: 17rem;
         bottom: 8rem;
     }
-
 
 
 }

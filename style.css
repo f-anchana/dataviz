@@ -545,7 +545,7 @@ h4 {
 
 }
 
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1920px) {
 
     .bio, h3, .about-p {
         font-size: 1.15rem;

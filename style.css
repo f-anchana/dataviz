@@ -51,35 +51,6 @@ section {
     width: 0px;
 }
 
-::-webkit-scrollbar-track {
-    background-color: black;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-}
-
-/* Nouvelle barre */
-
-/*.scroll-indicator {
-    position: fixed;
-    margin: auto;
-    top: 30vh;
-    right: 1vw;
-    height: 5vh;
-    width: 10px;
-    transform-origin: top;
-    transform: scaleY(5);
-    background: linear-gradient(0deg, #000, #868686);
-    transition: transform 0.2s ease-out;
-}
-
-.content{
-    display: none;
-} */
-
-
 /* Section 1 - page d'accueil */
 
 .fond1 {

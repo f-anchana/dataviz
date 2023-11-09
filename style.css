@@ -62,8 +62,7 @@ section {
 
 /* Nouvelle barre */
 
-/* .scroll-indicator {
-    z-index: 100;
+/*.scroll-indicator {
     position: fixed;
     margin: auto;
     top: 30vh;
@@ -121,6 +120,16 @@ img {
     top: 87%;
     left: 50%;
     transform: translate(-50%, -88%);
+}
+
+.bouton1 {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton1:hover {
+    color: white;
+    text-decoration: none;
 }
 
 a.scroll {
@@ -392,9 +401,12 @@ a:hover {
     font-size: 0.938rem;
     text-align: center;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .mentions-légale p:hover {
+    color: #8A6E56;
+    transition: ease-in-out;
     text-decoration: underline;
 }
 

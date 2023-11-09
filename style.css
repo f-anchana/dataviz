@@ -63,8 +63,8 @@ section {
 /* Nouvelle barre */
 
 .scroll-indicator {
-    z-index: 100;
     position: fixed;
+    margin: auto;
     top: 30vh;
     right: 1vw;
     height: 20vh;

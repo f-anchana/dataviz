@@ -118,6 +118,16 @@ img {
     transform: translate(-50%, -88%);
 }
 
+.bouton1 {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton1:hover {
+    color: white;
+    text-decoration: none;
+}
+
 a.scroll {
     position: absolute;
     bottom: 5rem;
@@ -387,9 +397,12 @@ a:hover {
     font-size: 0.938rem;
     text-align: center;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .mentions-légale p:hover {
+    color: #8A6E56;
+    transition: ease-in-out;
     text-decoration: underline;
 }
 

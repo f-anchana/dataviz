@@ -510,6 +510,28 @@ h4 {
         margin-right: 7rem;
         width: 15vw;
     }
+    .miniature{
+        right: 8%;
+        bottom: 20%;
+    }
+    
+    .media_body{
+        margin-left: 96px;
+        max-width: 15.625rem;
+    }
+    
+    .media_body h1{
+        font-size: 0.7rem;
+    }
+    
+    #image-miniature {
+        width: 40px;
+    }
+
+    #description{
+        font-size: 0.6rem;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1254px) {

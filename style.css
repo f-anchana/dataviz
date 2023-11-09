@@ -189,11 +189,6 @@ a.scroll span {
     margin: auto;
     margin-left: 0;
     width: 30vw;
-    -webkit-animation: slidein 2s infinite ease-in;
-    animation: slidein 2s infinite ease-in;
-    animation: 3s ease-in 1s infinite reverse forwards running slidein;
-    animation-timeline: scroll();
-    animation-timeline: scroll(scroller axis);
 }
 
 
@@ -578,6 +573,30 @@ h4 {
     .annee {
         right: 17rem;
         bottom: 8rem;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .bio, h3, .about-p {
+        font-size: 1.15rem;
+        max-width: 60vw;     
+    }
+
+    .about-h2, .titre{
+        font-size: 2rem;
+    }
+
+    .annee{
+        bottom:10rem;
+        right:30rem;
+    }
+
+    .nb-ecoute{
+        top: 9rem;
     }
 
 

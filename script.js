@@ -175,8 +175,8 @@ fetch('rapdata.json').then(function (response) {
     });
 
     // Popup
-    var popup = document.querySelector('.popup-visible');
-    var btnMentions = document.querySelector('.mentions-légale p');
+    let popup = document.querySelector('.popup-visible');
+    let btnMentions = document.querySelector('.mentions-légale p');
     btnMentions.addEventListener('click', function () {
         popup.style.display = 'block';
     });
@@ -184,4 +184,18 @@ fetch('rapdata.json').then(function (response) {
     fermer.addEventListener('click', function () {
         popup.style.display = 'none';
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let gRap = document.getElementById('g-rap');
+        let explication = document.getElementById('explication');
+    
+        gRap.addEventListener('mouseenter', function () {
+            explication.style.display = 'block';
+        });
+    
+        gRap.addEventListener('mouseleave', function () {
+            explication.style.display = 'none';
+        });
+    });
+
 })

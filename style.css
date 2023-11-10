@@ -31,6 +31,8 @@ body {
     margin: 0;
     font-family: 'Poppins';
     z-index: 0;
+    overflow-x: hidden;
+
 }
 
 section {
@@ -153,36 +155,32 @@ a.scroll span {
     display: flex;
     transition: transform 0.5s ease;
     padding-top: 13rem;
+    margin-bottom: 0;
 
 }
 
 .g-rap {
     margin: auto;
+    transition: 0.5s ease-in-out;
+
 }
 
-.explication {
+#explication {
     position: absolute;
     font-size: 0.6rem;
     width: 320px;
-    right: 7rem;
+    /* right: 30rem; */
+    right: 27%;
+    padding-top: 18px;
     opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.grid:hover .explication{
-    opacity: 1;
+    /* transition: opacity 1s ease-in-out; */
 }
 
 .g-rap:hover {
     transform: translateX(-50%);
 }
 
-
-
-
-
-
-.taille100{
+.taille100 {
     display: flex;
 }
 
@@ -257,7 +255,7 @@ svg {
     bottom: 8rem;
 }
 
-.miniature{
+.miniature {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -267,12 +265,12 @@ svg {
     top: 35%;
 }
 
-.media_body{
+.media_body {
     margin-left: 96px;
     max-width: 15.625rem;
 }
 
-.media_body h1{
+.media_body h1 {
     font-size: 0.9rem;
     margin-bottom: 0;
 
@@ -283,7 +281,7 @@ svg {
     top: 5%;
 }
 
-.description{
+.description {
     margin-top: 0;
 
 }
@@ -440,7 +438,7 @@ h4 {
     line-height: 2;
 }
 
-.croix{
+.croix {
     position: fixed;
 }
 
@@ -499,27 +497,27 @@ h4 {
         margin-right: 7rem;
         width: 15vw;
     }
-    
-    .media_body{
+
+    .media_body {
         margin-left: 50px;
     }
-    
-    .media_body h1{
+
+    .media_body h1 {
         font-size: 0.6rem;
         max-width: 16rem;
 
     }
-    
+
     #image-miniature {
         width: 35px;
     }
 
-    .miniature{
+    .miniature {
         right: 3%;
 
     }
 
-    #description{
+    #description {
         font-size: 0.5rem;
     }
 
@@ -527,7 +525,7 @@ h4 {
         font-size: 0.6rem;
         width: 318px;
     } */
-    
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1254px) {
@@ -559,42 +557,42 @@ h4 {
         bottom: 2rem;
     }
 
-    .poppins400{
+    .poppins400 {
         font-size: 16rem;
         margin-top: 145px;
     }
 
-    .poppins100{
+    .poppins100 {
         font-size: 4rem;
     }
 
-    .explication{
+    .explication {
         font-size: 0.7rem;
         padding-top: 50px;
         width: 24rem;
     }
 
-    
-    .media_body{
+
+    .media_body {
         margin-left: 80px;
     }
-    
-    .media_body h1{
+
+    .media_body h1 {
         font-size: 0.8rem;
         max-width: 13rem;
 
     }
-    
+
     #image-miniature {
         width: 60px;
     }
 
-    .miniature{
+    .miniature {
         right: 7%;
 
     }
 
-    #description{
+    #description {
         font-size: 0.8rem;
         max-width: 15rem;
 
@@ -618,21 +616,24 @@ h4 {
 
 @media screen and (min-width: 1920px) {
 
-    .bio, h3, .about-p {
+    .bio,
+    h3,
+    .about-p {
         font-size: 1.15rem;
-        max-width: 60vw;     
+        max-width: 60vw;
     }
 
-    .about-h2, .titre{
+    .about-h2,
+    .titre {
         font-size: 2rem;
     }
 
-    .annee{
-        bottom:10rem;
-        right:30rem;
+    .annee {
+        bottom: 10rem;
+        right: 30rem;
     }
 
-    .nb-ecoute{
+    .nb-ecoute {
         top: 9rem;
     }
 

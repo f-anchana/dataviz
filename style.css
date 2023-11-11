@@ -169,8 +169,7 @@ a.scroll span {
     position: absolute;
     font-size: 0.6rem;
     width: 320px;
-    /* right: 30rem; */
-    right: 27%;
+    left: 50%;
     padding-top: 18px;
     opacity: 0;
     /* transition: opacity 1s ease-in-out; */
@@ -178,6 +177,7 @@ a.scroll span {
 
 .g-rap:hover {
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .taille100 {
@@ -442,9 +442,6 @@ h4 {
     position: fixed;
 }
 
-
-/* FIN */
-
 .strokeup {
     left: 3%;
     bottom: 85%;
@@ -520,15 +517,9 @@ h4 {
     #description {
         font-size: 0.5rem;
     }
-
-    /* .explication{
-        font-size: 0.6rem;
-        width: 318px;
-    } */
-
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1254px) {
+@media screen and (min-width: 1024px) and (max-width: 1253px) {
     .bio {
         max-width: 70vw;
         font-size: 0.7em;
@@ -558,18 +549,27 @@ h4 {
     }
 
     .poppins400 {
-        font-size: 16rem;
-        margin-top: 145px;
+        font-size: 19rem;
+        margin-top: 185px;
     }
 
     .poppins100 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
-    .explication {
+
+    .grid{
+        padding-top: 10rem;
+    }
+
+    #explication{
         font-size: 0.7rem;
-        padding-top: 50px;
-        width: 24rem;
+        padding-top: 65px;
+        left: 55%;
+    }
+
+    .g-rap:hover {
+        transform: translateX(-40%);
     }
 
 
@@ -599,7 +599,7 @@ h4 {
     }
 }
 
-@media screen and (min-width: 1254px) and (max-width: 1450px) {
+@media screen and (min-width: 1254px) and (max-width: 1919px) {
 
     .nb-ecoute {
         top: 8rem;
@@ -610,6 +610,36 @@ h4 {
         bottom: 8rem;
     }
 
+    .poppins100{
+        font-size: 6rem;
+    }
+
+    .poppins400{
+        font-size: 23rem;
+        margin-top: 220px;
+    }
+
+    .ethno100{
+        font-size: 5rem;
+    }
+
+    .grid{
+        padding-top: 7rem;
+    }
+
+    .g-rap:hover {
+        transform: translateX(-30%);
+    }
+
+    #explication{
+        font-size: 0.75rem;
+        left: 60%;
+        padding-top: 75px;
+    }
+
+    #description{
+        font-size: 0.75rem;
+    }
 
 
 }
@@ -637,5 +667,32 @@ h4 {
         top: 9rem;
     }
 
+    #explication{
+        font-size: 1.15rem;
+        width: 500px;
+        left: 60%;
+        padding-top: 110px ;
+    }
 
+    .poppins100{
+        font-size: 9rem;
+    }
+
+    .ethno100{
+        font-size: 8rem;
+    }
+
+
+    .poppins400{
+        font-size: 35rem;
+        margin-top: 334px;
+    }
+
+    .g-rap:hover {
+        transform: translateX(-30%);
+    }
+
+    .grid{
+        padding-top: 8rem;
+    }
 }

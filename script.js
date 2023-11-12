@@ -125,7 +125,7 @@ fetch('rapdata.json').then(function (response) {
                     if (this != barreSelectionnee) {
                         d3.select(this).style("opacity", 0.5);
                     }
-            
+
 
                 });
 
@@ -175,8 +175,8 @@ fetch('rapdata.json').then(function (response) {
     });
 
     // Popup
-    var popup = document.querySelector('.popup-visible');
-    var btnMentions = document.querySelector('.mentions-légale p');
+    let popup = document.querySelector('.popup-visible');
+    let btnMentions = document.querySelector('.mentions-légale p');
     btnMentions.addEventListener('click', function () {
         popup.style.display = 'block';
     });
@@ -184,4 +184,24 @@ fetch('rapdata.json').then(function (response) {
     fermer.addEventListener('click', function () {
         popup.style.display = 'none';
     });
-})
+
+
+    // fonction hover du texte what is grap
+    let gRap = document.querySelector('.g-rap');
+    let explication = document.getElementById('explication');
+    explication.style.transition = 'opacity 1s ease-in-out';
+    // explication.style.transition = 'opacity 0.2s ease-in-out, visibility 1s ease-in-out';
+
+
+    gRap.addEventListener('mouseenter', function () {
+        explication.style.visibility = 'visible';
+        explication.style.opacity = 1;
+    });
+
+    gRap.addEventListener('mouseleave', function () {
+        explication.style.visibility = 'hidden';
+        explication.style.opacity = 0;
+
+    });
+
+});

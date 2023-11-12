@@ -31,6 +31,8 @@ body {
     margin: 0;
     font-family: 'Poppins';
     z-index: 0;
+    overflow-x: hidden;
+
 }
 
 section {
@@ -145,50 +147,62 @@ a.scroll span {
 #section1 {
     background-color: black;
     color: white;
-    display: flex;
     z-index: 0;
 }
 
-.g-rap {
+
+.grid {
     display: flex;
-    align-items: center;
+    transition: transform 0.5s ease;
+    padding-top: 13rem;
+    margin-bottom: 0;
+
+}
+
+.g-rap {
     margin: auto;
-    margin-right: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+#explication {
+    position: absolute;
+    font-size: 0.6rem;
+    width: 320px;
+    left: 50%;
+    padding-top: 18px;
+    opacity: 0;
+    /* transition: opacity 1s ease-in-out; */
+}
+
+.g-rap:hover {
+    transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .taille100 {
-    height: 50vh;
-}
-
-.taille400 {
-    height: 100vh;
+    display: flex;
 }
 
 .poppins100 {
-    font-size: 8.3331rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-family: 'Poppins-SemiBold';
-    line-height: 0.1;
+    line-height: 1;
 }
 
 .ethno100 {
-    font-size: 5.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-family: 'Ethnocentric';
     line-height: 0.1;
 }
 
 .poppins400 {
-    font-size: 33.3325rem;
     font-family: 'Poppins-SemiBold';
     line-height: 0;
-}
-
-.explication {
-    font-size: 1.15rem;
-    margin: auto;
-    margin-left: 0;
-    width: 30vw;
+    font-size: 11.5rem;
+    margin-top: 115px;
 }
 
 
@@ -241,7 +255,7 @@ svg {
     bottom: 8rem;
 }
 
-.miniature{
+.miniature {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -251,19 +265,26 @@ svg {
     top: 35%;
 }
 
-.media_body{
+.media_body {
     margin-left: 96px;
     max-width: 15.625rem;
 }
 
-.media_body h1{
+.media_body h1 {
     font-size: 0.9rem;
+    margin-bottom: 0;
+
 }
 
 #image-miniature {
     width: 76px;
+    top: 5%;
 }
 
+.description {
+    margin-top: 0;
+
+}
 
 /* Section 3 - Rappeurs */
 
@@ -417,12 +438,9 @@ h4 {
     line-height: 2;
 }
 
-.croix{
+.croix {
     position: fixed;
 }
-
-
-/* FIN */
 
 .strokeup {
     left: 3%;
@@ -476,31 +494,32 @@ h4 {
         margin-right: 7rem;
         width: 15vw;
     }
-    .miniature{
-        right: 8%;
-        bottom: 20%;
-    }
-    
-    .media_body{
-        margin-left: 96px;
-        max-width: 15.625rem;
-    }
-    
-    .media_body h1{
-        font-size: 0.7rem;
-    }
-    
-    #image-miniature {
-        width: 40px;
+
+    .media_body {
+        margin-left: 50px;
     }
 
-    #description{
+    .media_body h1 {
         font-size: 0.6rem;
+        max-width: 16rem;
+
     }
-    
+
+    #image-miniature {
+        width: 35px;
+    }
+
+    .miniature {
+        right: 3%;
+
+    }
+
+    #description {
+        font-size: 0.5rem;
+    }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1254px) {
+@media screen and (min-width: 1024px) and (max-width: 1253px) {
     .bio {
         max-width: 70vw;
         font-size: 0.7em;
@@ -528,9 +547,59 @@ h4 {
         right: 18rem;
         bottom: 2rem;
     }
+
+    .poppins400 {
+        font-size: 19rem;
+        margin-top: 185px;
+    }
+
+    .poppins100 {
+        font-size: 5rem;
+    }
+
+
+    .grid{
+        padding-top: 10rem;
+    }
+
+    #explication{
+        font-size: 0.7rem;
+        padding-top: 65px;
+        left: 55%;
+    }
+
+    .g-rap:hover {
+        transform: translateX(-40%);
+    }
+
+
+    .media_body {
+        margin-left: 80px;
+    }
+
+    .media_body h1 {
+        font-size: 0.8rem;
+        max-width: 13rem;
+
+    }
+
+    #image-miniature {
+        width: 60px;
+    }
+
+    .miniature {
+        right: 7%;
+
+    }
+
+    #description {
+        font-size: 0.8rem;
+        max-width: 15rem;
+
+    }
 }
 
-@media screen and (min-width: 1254px) and (max-width: 1450px) {
+@media screen and (min-width: 1254px) and (max-width: 1919px) {
 
     .nb-ecoute {
         top: 8rem;
@@ -541,29 +610,89 @@ h4 {
         bottom: 8rem;
     }
 
+    .poppins100{
+        font-size: 6rem;
+    }
+
+    .poppins400{
+        font-size: 23rem;
+        margin-top: 220px;
+    }
+
+    .ethno100{
+        font-size: 5rem;
+    }
+
+    .grid{
+        padding-top: 8rem;
+    }
+
+    .g-rap:hover {
+        transform: translateX(-30%);
+    }
+
+    #explication{
+        font-size: 0.75rem;
+        left: 60%;
+        padding-top: 75px;
+    }
+
+    #description{
+        font-size: 0.75rem;
+    }
 
 
 }
 
 @media screen and (min-width: 1920px) {
 
-    .bio, h3, .about-p {
+    .bio,
+    h3,
+    .about-p {
         font-size: 1.15rem;
-        max-width: 60vw;     
+        max-width: 60vw;
     }
 
-    .about-h2, .titre{
+    .about-h2,
+    .titre {
         font-size: 2rem;
     }
 
-    .annee{
-        bottom:10rem;
-        right:30rem;
+    .annee {
+        bottom: 10rem;
+        right: 30rem;
     }
 
-    .nb-ecoute{
+    .nb-ecoute {
         top: 9rem;
     }
 
+    #explication{
+        font-size: 1.15rem;
+        width: 500px;
+        left: 60%;
+        padding-top: 110px ;
+    }
 
+    .poppins100{
+        font-size: 9rem;
+    }
+
+    .ethno100{
+        font-size: 8rem;
+    }
+
+
+    .poppins400{
+        font-size: 35rem;
+        margin-top: 334px;
+    }
+
+    .g-rap:hover {
+        transform: translateX(-30%);
+    }
+
+    .grid{
+        padding-top: 8rem;
+    }
 }

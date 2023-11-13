@@ -186,7 +186,7 @@ fetch('rapdata.json').then(function (response) {
     });
 
 
-    // fonction hover du texte what is grap
+    // fonction hover du texte what is grap - faire plutôt au scroll
     let gRap = document.querySelector('.g-rap');
     let explication = document.getElementById('explication');
     explication.style.transition = 'opacity 1s ease-in-out';

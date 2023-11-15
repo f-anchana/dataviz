@@ -8,23 +8,35 @@
     font-family: 'Ethnocentric';
     src: url('./font/ethnocentric-rg.woff') format('woff'), url('./font/ethnocentric-rg.woff2') format('woff2');
 
-    font-family: 'Poppins';
-    src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regular.woff2') format('woff2');
+}
 
+@font-face {
+    font-family: 'Poppins';
+src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regular.woff2') format('woff2');
+
+
+}
+
+@font-face {
     font-family: 'Poppins-Bold';
     src: url('./font/Poppins-Bold.woff') format('woff'), url('./font/Poppins-Bold.woff2') format('woff2');
 
+}
+
+@font-face {
     font-family: 'Poppins-SemiBold';
     src: url('./font/Poppins-SemiBold.woff') format('woff'), url('./font/Poppins-SemiBold.woff2') format('woff2');
 
 }
 
+
+
+
+
+
 html {
     margin: 0;
     padding: 0;
-    -ms-scroll-snap-type: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -40,8 +52,6 @@ section {
     margin: 0;
     height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     z-index: 0;
 }
 
@@ -74,12 +84,25 @@ img {
 .strokeleft {
     left: 3%;
     top: 85%;
+    position: fixed;
 }
 
 .strokeright {
     right: 3%;
     bottom: 85%;
+    position: fixed;
 }
+/* .strokelefta {
+    left: 3%;
+    top: 85%;
+    position: fixed;
+}
+
+.strokerightb {
+    right: 3%;
+    bottom: 85%;
+    position: fixed;
+} */
 
 
 /* Bouton de scroll */

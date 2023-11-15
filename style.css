@@ -37,9 +37,6 @@ src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regu
 html {
     margin: 0;
     padding: 0;
-    -ms-scroll-snap-type: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -55,8 +52,6 @@ section {
     margin: 0;
     height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     z-index: 0;
 }
 

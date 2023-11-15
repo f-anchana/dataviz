@@ -7,32 +7,22 @@
 @font-face {
     font-family: 'Ethnocentric';
     src: url('./font/ethnocentric-rg.woff') format('woff'), url('./font/ethnocentric-rg.woff2') format('woff2');
-
 }
 
 @font-face {
     font-family: 'Poppins';
-src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regular.woff2') format('woff2');
-
-
+    src: url('./font/Poppins-Regular.woff') format('woff'), url('./font/Poppins-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Poppins-Bold';
     src: url('./font/Poppins-Bold.woff') format('woff'), url('./font/Poppins-Bold.woff2') format('woff2');
-
 }
 
 @font-face {
     font-family: 'Poppins-SemiBold';
     src: url('./font/Poppins-SemiBold.woff') format('woff'), url('./font/Poppins-SemiBold.woff2') format('woff2');
-
 }
-
-
-
-
-
 
 html {
     margin: 0;
@@ -44,7 +34,6 @@ body {
     font-family: 'Poppins';
     z-index: 0;
     overflow-x: hidden;
-
 }
 
 section {

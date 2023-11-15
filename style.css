@@ -47,11 +47,10 @@ section {
 
 /* Barre de scroll*/
 
-/* Cacher l'ancienne barre */
-
 *::-webkit-scrollbar {
     width: 0px;
 }
+
 
 /* Section 1 - page d'accueil */
 

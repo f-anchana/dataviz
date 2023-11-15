@@ -1,9 +1,3 @@
-// Parce qu'on est dans un environnement Node.js
-import gsap from 'gsap'
-import {Bounce} from 'gsap'
-import TextPlugin from 'gsap/TextPlugin'
-import ScrollTrigger from 'gsap/ScrollTrigger'
-
 gsap.registerPlugin(TextPlugin, ScrollTrigger)
 
 

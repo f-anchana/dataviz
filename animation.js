@@ -1,5 +1,4 @@
-gsap.registerPlugin(TextPlugin, ScrollTrigger)
-
+gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
 gsap.from('#section2', {
     duration: 2,  

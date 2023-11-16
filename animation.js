@@ -1,9 +1,14 @@
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
 gsap.from('#section2', {
-    duration: 2,  
-    opacity: 0.5,
-    fontSize: '3em',
-    y: 50, 
-    ease: 'power2.out'
+    duration: 1,  
+    opacity: 0,
+    y: 100, 
+    ease: 'power1',
+
+   scrollTrigger: {
+        trigger: '#section2',
+        start: "top 80%",
+        toggleActions: 'play reverse play reverse'
+    },
 });

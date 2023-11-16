@@ -147,6 +147,7 @@ a.scroll span {
     transform: rotate(-45deg);
     -webkit-animation: btnscroll 1s infinite ease;
     animation: btnscroll 1s infinite ease;
+    scroll-behavior: smooth;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
 }

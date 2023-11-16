@@ -452,19 +452,6 @@ h4 {
         transform: translate(30%, 20%);
     }
 
-    .nb-ecoute {
-        top: 10rem;
-        left: 10rem;
-        font-size: 0.6em;
-    }
-
-    .annee {
-        font-size: 0.6em;
-        right: 10rem;
-        bottom: 0rem;
-    }
-
-
     .bio {
         max-width: 70vw;
         font-size: 0.6em;
@@ -526,15 +513,6 @@ h4 {
 
     svg {
         transform: translate(25%, 10%);
-    }
-
-    .nb-ecoute {
-        top: 11rem;
-    }
-
-    .annee {
-        right: 18rem;
-        bottom: 2rem;
     }
 
     .poppins400 {

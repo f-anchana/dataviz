@@ -132,7 +132,7 @@ fetch('rapdata.json').then(function (response) {
             let contenusection = d3.select("#section-3");
             d3.selectAll('.histobarre')
                 .each(function (d) {
-                    d.compteclick = 0;  // Ajoutez une propriété pour suivre le nombre de clics
+                    d.compteclick = 0; //On ajoute un compteur qui permet de compter le nombre de click sur un baton
                 })
                 .on("click", function (e, d) {
                     barreSelectionnee = this;
@@ -171,8 +171,10 @@ fetch('rapdata.json').then(function (response) {
                     let sectionElement = section.node();
                     sectionElement.scrollIntoView({ behavior: "smooth" });
 
-                    // Pour la suppression de la section lorsqu'il y a 2 clicks sur la même barre
+                    // L'autoincrémentation du nombre de clicks + Pour la suppression de la section lorsqu'il y a 2 clicks sur la même barre
                     d.compteclick++;
+                    console.log(d.compteclick);
+
 
 
                     if (d.compteclick == 2) {

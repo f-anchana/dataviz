@@ -81,18 +81,6 @@ img {
     bottom: 85%;
     position: fixed;
 }
-/* .strokelefta {
-    left: 3%;
-    top: 85%;
-    position: fixed;
-}
-
-.strokerightb {
-    right: 3%;
-    bottom: 85%;
-    position: fixed;
-} */
-
 
 /* Bouton de scroll */
 
@@ -184,7 +172,6 @@ a.scroll span {
     left: 50%;
     padding-top: 18px;
     opacity: 0;
-    /* transition: opacity 1s ease-in-out; */
 }
 
 .g-rap:hover {

@@ -240,23 +240,8 @@ svg {
     color: #8A6E56;
 }
 
-.nb-ecoute {
-    font-size: 0.75rem;
-    position: absolute;
-    font-weight: 600;
+text{
     text-transform: uppercase;
-    top: 7rem;
-    left: 11rem;
-}
-
-.annee {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: end;
-    position: relative;
-    right: 25rem;
-    bottom: 8rem;
 }
 
 .miniature {

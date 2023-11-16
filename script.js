@@ -130,6 +130,7 @@ fetch('rapdata.json').then(function (response) {
 
             // Fonction click pour sélectionner l'artiste associé au bâton 
             let contenusection = d3.select("#section-3");
+            let LastBatonnet = null;
             d3.selectAll('.histobarre')
                 .each(function (d) {
                     d.compteclick = 0; //On ajoute un compteur qui permet de compter le nombre de click sur un baton
@@ -171,11 +172,12 @@ fetch('rapdata.json').then(function (response) {
                     let sectionElement = section.node();
                     sectionElement.scrollIntoView({ behavior: "smooth" });
 
+                    if(d != LastBatonnet){
+                        d.compteclick = 0;
+                    }
                     // L'autoincrémentation du nombre de clicks + Pour la suppression de la section lorsqu'il y a 2 clicks sur la même barre
                     d.compteclick++;
-                    console.log(d.compteclick);
-
-
+                    LastBatonnet = d;
 
                     if (d.compteclick == 2) {
                         barreSelectionnee = null;
@@ -184,6 +186,7 @@ fetch('rapdata.json').then(function (response) {
                         // À la fin, on rénitialite le nombre de clicks pour ne pas faire d'erreurs
                         d.compteclick = 0;
                     }
+
 
                 });
 

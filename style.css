@@ -176,7 +176,7 @@ a.scroll span {
     font-size: 0.6rem;
     width: 320px;
     left: 50%;
-    padding-top: 18px;
+    padding-top: 40px;
     opacity: 0;
 }
 
@@ -292,6 +292,10 @@ h2 {
     font-family: "Ethnocentric";
 }
 
+h3{
+    font-family: "Ethnocentric";
+}
+
 .contenu {
     margin-left: 3.75rem;
     padding-top: 3.75rem;
@@ -299,13 +303,13 @@ h2 {
 
 .contenu h1 {
     text-transform: uppercase;
-    font-size: 1.25rem;
-    font-weight: 800;
+    font-size: 1rem;
 }
 
 .titre {
     font-size: 1.5rem;
     max-width: 1000px;
+    padding-bottom: 10px;
 
 }
 
@@ -499,7 +503,7 @@ h4 {
 @media screen and (min-width: 1024px) and (max-width: 1253px) {
     .bio {
         max-width: 70vw;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .logo_noir {
@@ -531,7 +535,7 @@ h4 {
     }
 
     #explication{
-        font-size: 0.7rem;
+        font-size: 0.78rem;
         padding-top: 65px;
         left: 55%;
     }
@@ -565,12 +569,18 @@ h4 {
         max-width: 15rem;
 
     }
+
 }
 
 @media screen and (min-width: 1254px) and (max-width: 1919px) {
 
     .nb-ecoute {
         top: 8rem;
+    }
+
+    .bio{
+        font-size: 0.9rem;
+        max-width: 65vw;
     }
 
     .annee {
@@ -592,7 +602,7 @@ h4 {
     }
 
     .grid{
-        padding-top: 8rem;
+        padding-top: 10rem;
     }
 
     .g-rap:hover {
@@ -600,14 +610,20 @@ h4 {
     }
 
     #explication{
-        font-size: 0.75rem;
-        left: 60%;
-        padding-top: 75px;
+        font-size: 1rem;
+        left: 59%;
+        padding-top: 70px;
+        width: 400px;
     }
 
     #description{
         font-size: 0.75rem;
     }
+
+    h3{
+        font-size: 1rem;
+    }
+
 
 
 }
@@ -636,7 +652,7 @@ h4 {
     }
 
     #explication{
-        font-size: 1.15rem;
+        font-size: 1.3rem;
         width: 500px;
         left: 60%;
         padding-top: 110px ;

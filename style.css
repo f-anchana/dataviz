@@ -424,12 +424,14 @@ a:hover {
 
 h4 {
     text-align: center;
+    margin: 1rem;
 }
 
 .mention p {
     text-align: left;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1;
+    margin-bottom: 2rem;
 }
 
 .croix {
@@ -448,7 +450,18 @@ h4 {
 
 /* Responsive */
 
+@media screen and (max-width: 768px) {
+    .fond1{
+        background-image: url(./img/G-RAP_480.gif);
+    }
+    
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .fond1{
+        background-image: url(./img/G-RAP_720.gif);
+    }
+
     #section2 {
         font-size: 1em;
     }

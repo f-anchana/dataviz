@@ -202,7 +202,7 @@ fetch('rapdata.json').then(function (response) {
     btnMentions.addEventListener('click', function () {
         popup.style.display = 'block';
     });
-    var fermer = document.querySelector('.fermer');
+    let fermer = document.querySelector('.fermer');
     fermer.addEventListener('click', function () {
         popup.style.display = 'none';
     });

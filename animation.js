@@ -13,15 +13,43 @@ gsap.from('#section2', {
     },
 });
 
-gsap.from("#section-3", {
-    x: "-100%",
+
+// lui là ne marche pas - section artiste
+// gsap.from("#section-3 > h1", {
+//     x: "-50",
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power2.inOut",
+
+//     scrollTrigger: {
+//         trigger: '#section-3 > h1',
+//         start: "left 80%",
+//         toggleActions: 'play reverse play reverse'
+//     },
+// });
+
+gsap.from(".section-4  > .deco", {
+    x: "-50",
     opacity: 0,
     duration: 1,
     ease: "power2.inOut",
 
     scrollTrigger: {
-        trigger: '#section-3',
+        trigger: '.section-4 > .deco',
         start: "left 80%",
         toggleActions: 'play reverse play reverse'
     },
 });
+gsap.from(".section-4  > .logo_noir", {
+    x: "-80",
+    opacity: 0,
+    duration: 2,
+    ease: "power2.inOut",
+
+    scrollTrigger: {
+        trigger: '.section-4 > .logo_noir',
+        start: "left 80%",
+        toggleActions: 'play reverse play reverse'
+    },
+});
+

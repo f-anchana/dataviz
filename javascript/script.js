@@ -19,7 +19,7 @@ fetch('rapdata.json').then(function (response) {
 
             d3.selectAll(".histobarre")
                 .append("rect")
-                .attr("tabindex","0")
+                // .attr("tabindex","0")
                 .attr("width", `${largeur_baton - espaceEntreBarres}px`)
                 .attr("height", (d) => d.Nbr * 100 / 2000000000)
                 .attr("fill", (d, i) => couleur[i % couleur.length])

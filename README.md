@@ -1,14 +1,13 @@
-# Projet de Visualisation de données interactive évolutives
-Ce projet étudiant DataViz consiste à créer une visualisation interactive de données qui évoluent. Pour cela, nous créons une page web pour afficher.
+# Projet de Visualisation de Données Interactives Évolutives
+Ce projet étudiant en DataViz consiste à créer une visualisation interactive de données évolutives. Pour cela, nous avons choisi de mettre en évidence le nombre d'écoutes de chaque album ayant remporté un prix aux Grammy Awards. De cette manière, l'utilisateur obtient un meilleur aperçu des tubes qui ont pu figurer en tête des tendances, ainsi que des rappeurs qui y ont contribué.
 
-# G-rap c'est quoi ?
-C'est un site web qui recense l'évolution des meilleurs titres de rap par année désigné par les Grammy Awards
-
+# Qu'est-ce que G-rap ?
+G-rap est un site web qui recense l'évolution des meilleurs titres de rap chaque année, désignés par les Grammy Awards.
 
 # Les principales fonctionnalités
-Un graphique interactive pour une meilleure expérience utilisateur
-Chaque section d'artiste présente l'artiste, son titre gagnant, un extrait provenant de Spotify.
-L'utilisation d'éléments visuels et sonores permettent l'attractivité de notre site web.
+- Graphique interactif pour une expérience utilisateur améliorée.
+- Chaque section présente l'artiste, le titre gagnant, ainsi qu'un extrait provenant de Spotify.
+- Pop-up utilisé pour afficher les mentions légales.
 
-# Visiter G-rap
-Le lien pour visiter le site : https://f-anchana.github.io/g-rap/ 
+# Visitez G-rap
+Lien pour visiter le site : (https://f-anchana.github.io/g-rap/)

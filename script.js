@@ -156,7 +156,7 @@ fetch('rapdata.json').then(function (response) {
                         <img src="${d.img}" class="image" alt="">
                         <img class="strokeright" src="./img/strokeright.png" alt="">
                         <img class="strokedown" src="./img/strokedown.png" alt="">
-                        <div class="contenu" data-aos="fade-right">
+                        <div class="contenu"  data-aos="fade-right">
                             <h1> Winner : ${d.year} </h1>
                             <h2 class="titre">${d.titre} by <span class="artista">${d.artiste}</span></h2>
                             <h3>Artist Biography :</h3>
@@ -176,7 +176,7 @@ fetch('rapdata.json').then(function (response) {
                     if(d != LastBatonnet){
                         d.compteclick = 0;
                     }
-                    // L'autoincrémentation du nombre de clicks + Pour la suppression de la section lorsqu'il y a 2 clicks sur la même barre
+                    // L'auto incrémentation du nombre de clicks + Pour la suppression de la section lorsqu'il y a 2 clicks sur la même barre
                     d.compteclick++;
                     LastBatonnet = d;
 
@@ -208,12 +208,10 @@ fetch('rapdata.json').then(function (response) {
     });
 
 
-    // fonction hover du texte what is grap - faire plutôt au scroll
+    // fonction hover du texte what is grap
     let gRap = document.querySelector('.g-rap');
     let explication = document.getElementById('explication');
     explication.style.transition = 'opacity 1s ease-in-out';
-    // explication.style.transition = 'opacity 0.2s ease-in-out, visibility 1s ease-in-out';
-
 
     gRap.addEventListener('mouseenter', function () {
         explication.style.visibility = 'visible';

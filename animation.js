@@ -12,3 +12,16 @@ gsap.from('#section2', {
         toggleActions: 'play reverse play reverse'
     },
 });
+
+gsap.from("#section-3", {
+    x: "-100%",
+    opacity: 0,
+    duration: 1,
+    ease: "power2.inOut",
+
+    scrollTrigger: {
+        trigger: '#section-3',
+        start: "left 80%",
+        toggleActions: 'play reverse play reverse'
+    },
+});

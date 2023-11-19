@@ -28,28 +28,64 @@ gsap.from('#section2', {
 //     },
 // });
 
-gsap.from(".section-4  > .deco", {
-    x: "-50",
+// gsap.from(".about-h3", {
+//     y: 80,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power2.inOut",
+
+//     scrollTrigger: {
+//         trigger: '.about-h3',
+//         start: "bottom %",
+//         toggleActions: 'play reverse play reverse'
+//     },
+// });
+
+gsap.from(".section-4  > .logo_noir", {
+    y: 80,
     opacity: 0,
     duration: 1,
     ease: "power2.inOut",
 
     scrollTrigger: {
-        trigger: '.section-4 > .deco',
-        start: "left 80%",
+        trigger: '.section-4 > .logo_noir',
+        start: "bottom 90%",
         toggleActions: 'play reverse play reverse'
     },
 });
-gsap.from(".section-4  > .logo_noir", {
-    x: "-80",
+gsap.from(".section-4  > .about-h2", {
+    x: -80,
     opacity: 0,
-    duration: 2,
-    ease: "power2.inOut",
+    duration: 1,
+    ease: "power2",
 
     scrollTrigger: {
-        trigger: '.section-4 > .logo_noir',
+        trigger: '.section-4  > .about-h2',
         start: "left 80%",
         toggleActions: 'play reverse play reverse'
     },
 });
+gsap.from(".section-4  > .about-h3", {
+    x: -80,
+    opacity: 0,
+    duration: 1,
+    ease: "power2",
 
+    scrollTrigger: {
+        trigger: '.section-4  > .about-h3',
+        start: "left 80%",
+        toggleActions: 'play reverse play reverse'
+    },
+});
+gsap.from(".section-4  > .about-p, .mentions-légale", {
+    x: -80,
+    opacity: 0,
+    duration: 2,
+    ease: "power2",
+
+    scrollTrigger: {
+        trigger: '.section-4  > .about-p',
+        start: "left 80%",
+        toggleActions: 'play reverse play reverse'
+    },
+});

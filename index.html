@@ -14,7 +14,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script defer src="./animation.js"></script>
     <title>G-Rap</title>
     <link rel="icon" type="image/png" href="./img/logo_blanc.png">
 </head>
@@ -217,7 +216,12 @@
         </div>
 
     </section>
-
+    <script>
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+        duration:1500,
+    });
+</script>
 
 </body>
 

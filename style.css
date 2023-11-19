@@ -340,13 +340,13 @@ iframe {
 .about-h2 {
     font-family: "Ethnocentric";
     margin-left: 6.25rem;
-    padding-top: 6rem;
+    padding-top: 5rem;
     font-size: 1.25rem;
 }
 
 .about-h3 {
     font-family: "Ethnocentric";
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     margin-left: 6.25rem;
 }
 
@@ -509,7 +509,7 @@ h4 {
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1253px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
     .bio {
         max-width: 70vw;
         font-size: 0.8em;
@@ -579,9 +579,17 @@ h4 {
 
     }
 
+    .about-h2 {
+        padding-top: 4rem;
+    }
+
+    .about-h3{
+    margin-top: 2rem;
+    }
+
 }
 
-@media screen and (min-width: 1254px) and (max-width: 1919px) {
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
 
     .bio{
         font-size: 0.9rem;
@@ -624,7 +632,13 @@ h4 {
         font-size: 1rem;
     }
 
+    .about-h2 {
+        padding-top: 5rem;
+    }
 
+    .about-h3{
+    margin-top: 2rem;
+    }
 
 }
 

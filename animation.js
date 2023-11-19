@@ -13,3 +13,18 @@ gsap.from('#section2', {
     },
 });
 
+
+gsap.from(".about-h2", {
+    x: "-80",
+    opacity: 0,
+    duration: 1,
+    ease: "power1",
+
+    scrollTrigger: {
+        trigger: '.about-h2',
+        start: "left 80%",
+        toggleActions: 'play reverse play reverse'
+    },
+});
+
+

@@ -296,12 +296,12 @@ h3{
 .contenu h1 {
     text-transform: uppercase;
     font-size: 1rem;
+    margin: 0;
 }
 
 .titre {
     font-size: 1.5rem;
     max-width: 1000px;
-    padding-bottom: 10px;
 
 }
 

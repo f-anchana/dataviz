@@ -156,7 +156,7 @@ fetch('rapdata.json').then(function (response) {
                         <img src="${d.img}" class="image" alt="">
                         <img class="strokeright" src="./img/strokeright.png" alt="">
                         <img class="strokedown" src="./img/strokedown.png" alt="">
-                        <div class="contenu">
+                        <div class="contenu" data-aos="fade-right">
                             <h1> Winner : ${d.year} </h1>
                             <h2 class="titre">${d.titre} by <span class="artista">${d.artiste}</span></h2>
                             <h3>Artist Biography :</h3>

@@ -587,18 +587,9 @@ h4 {
 
 @media screen and (min-width: 1254px) and (max-width: 1919px) {
 
-    .nb-ecoute {
-        top: 8rem;
-    }
-
     .bio{
         font-size: 0.9rem;
         max-width: 65vw;
-    }
-
-    .annee {
-        right: 17rem;
-        bottom: 8rem;
     }
 
     .poppins100{
@@ -653,15 +644,6 @@ h4 {
     .about-h2,
     .titre {
         font-size: 2rem;
-    }
-
-    .annee {
-        bottom: 10rem;
-        right: 30rem;
-    }
-
-    .nb-ecoute {
-        top: 9rem;
     }
 
     #explication{

@@ -16,7 +16,7 @@ Data : Json <br>
 Visual and sound content integration with APIs
 
 # Contributors
-Developers : Anchana Fatimarajan and Keren Oshoffa 
+Developers : Anchana Fatimarajan and Keren Oshoffa <br>
 Artistic Director : Keren Oshoffa <br>
 Graphic designer : Jade Célestine <br>
 Writer : Jade Célestine <br>

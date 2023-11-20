@@ -1,13 +1,26 @@
-# Projet de Visualisation de Données Interactives Évolutives
-Ce projet étudiant en DataViz consiste à créer une visualisation interactive de données évolutives. Pour cela, nous avons choisi de mettre en évidence le nombre d'écoutes sur Spotify de chaque titre de rap ayant remporté un prix aux Grammy Awards. De cette manière, l'utilisateur obtient un meilleur aperçu des tubes qui ont pu figurer en tête des tendances, ainsi que des rappeurs qui y ont contribué.
+# Evolutive and Interactive Data Visualization Project
+This DataViz student project involves creating an interactive visualization of evolving data. In order to do this, we chose to illustrate the number of plays on Spotify of each Grammy Awards winning rap track. In this way, the user gets a better overview of the hits that may have topped the trends, as well as the rappers who contributed to them.
 
-# Qu'est-ce que G-rap ?
-G-rap est un site web qui recense l'évolution des meilleurs titres de rap chaque année, désignés par les Grammy Awards.
+# What is G-rap ?
+G-rap is a website that has tracked the evolution of the best rap songs every year since 2004, as nominated by the Grammy Awards.
 
-# Les principales fonctionnalités
-- Graphique interactif pour une expérience utilisateur améliorée.
-- Chaque section présente l'artiste, le titre gagnant, ainsi qu'un extrait provenant de Spotify.
-- Pop-up utilisé pour afficher les mentions légales.
+# Main Features
+- Interactive graphics for an optimized user experience.
+- Each section introduces the artist, the winning track and a sample from Spotify.
+- Pop-up used to display legal notice.
 
-# Visitez G-rap
-Lien pour visiter le site : (https://f-anchana.github.io/g-rap/)
+# Technologies used
+Front-End : HTML, CSS, JavaScript <br>
+Librairies : D3.js, AOS <br>
+Data : Json <br>
+Visual and sound content integration with APIs
+
+# Contributors
+Developers : Anchana Fatimarajan and Keren Oshoffa 
+Artistic Director : Keren Oshoffa <br>
+Graphic designer : Jade Célestine <br>
+Writer : Jade Célestine <br>
+Authors : Jade Célestine, Anchana Fatimarajan and Keren Oshoffa
+
+# To visit G-rap
+Link to visit the website : (https://f-anchana.github.io/g-rap/)

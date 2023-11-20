@@ -5,8 +5,8 @@ This DataViz student project involves creating an interactive visualization of e
 G-rap is a website that has tracked the evolution of the best rap songs every year since 2004, as nominated by the Grammy Awards.
 
 # Main Features
-- Interactive graphics for an optimized user experience.
-- Each section introduces the artist, the winning track and a sample from Spotify.
+- Interactive graphic for an optimized user experience.
+- Each artist section features the winning artist, track and Spotify sample.
 - Pop-up used to display legal notice.
 
 # Technologies used
